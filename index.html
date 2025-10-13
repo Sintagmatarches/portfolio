@@ -1,1 +1,322 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Portfolio | Alex Morgan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="#top">Alex Morgan</a>
+            <nav class="navigation" aria-label="Primary navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="primary-menu" class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#featured">Featured Work</a></li>
+                    <li><a href="#showcase">Dashboards</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="btn btn-primary" href="#contact">Let's Collaborate</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Power BI • Data Storytelling • Automation</p>
+                    <h1 id="hero-title">I build insight-rich dashboards that drive confident decisions.</h1>
+                    <p class="lead">I'm Alex Morgan, a data analyst focused on designing interactive Power BI experiences that surface the metrics leaders need. Explore my latest visualizations, downloadable reports, and behind-the-scenes process.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#featured">View my work</a>
+                        <a class="btn btn-secondary" href="#contact">Book a discovery call</a>
+                    </div>
+                    <dl class="stats">
+                        <div>
+                            <dt>25+</dt>
+                            <dd>End-to-end dashboards launched</dd>
+                        </div>
+                        <div>
+                            <dt>80%</dt>
+                            <dd>Average automation of manual reporting</dd>
+                        </div>
+                        <div>
+                            <dt>5</dt>
+                            <dd>Industries served (finance, retail, SaaS, logistics, health)</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="hero-gallery" aria-hidden="true">
+                    <div class="gallery-card">
+                        <img src="assets/images/revenue-intelligence.svg" alt="Revenue dashboard illustration">
+                        <span class="gallery-caption">Revenue Intelligence Dashboard</span>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/images/logistics-pulse.svg" alt="Logistics analytics illustration">
+                        <span class="gallery-caption">Logistics Pulse Monitor</span>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/images/retail-footfall.svg" alt="Retail analytics illustration">
+                        <span class="gallery-caption">Retail Footfall Command Center</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title">From raw data to business clarity</h2>
+                <p class="section-intro">I combine a consulting mindset with technical expertise to craft Power BI solutions that resonate with every stakeholder. My approach balances beautiful design, accessible storytelling, and rock-solid data modeling.</p>
+                <div class="about-grid">
+                    <article class="about-card">
+                        <h3>Business-first strategy</h3>
+                        <p>Workshops, KPI discovery, and stakeholder mapping ensure dashboards address the questions that matter and deliver adoption-ready experiences.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Efficient data modeling</h3>
+                        <p>Clean dimensional models, DAX optimization, and automated refresh pipelines power consistent, scalable reporting.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Design for impact</h3>
+                        <p>High-contrast visuals, storytelling annotations, and custom themes highlight trends while supporting accessibility guidelines.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured section" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">Featured reports</p>
+                        <h2 id="featured-title">Power BI case studies</h2>
+                    </div>
+                    <a class="btn btn-secondary" href="#contact">Request a walkthrough</a>
+                </div>
+                <div class="featured-grid">
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img src="assets/images/revenue-intelligence.svg" alt="Finance dashboard screenshot">
+                        </div>
+                        <div class="feature-body">
+                            <h3>Subscription Revenue Intelligence</h3>
+                            <p>Unified metrics from CRM, billing, and product analytics to give executives a holistic subscription health view, reducing manual slides by 90%.</p>
+                            <ul>
+                                <li>Metrics: MRR, churn cohorts, LTV</li>
+                                <li>Features: Drill-through story tiles, proactive alerts</li>
+                                <li>Download: <a href="assets/files/subscription-revenue-case-study.txt" class="inline-link" download>Case study & notes</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img src="assets/images/retail-footfall.svg" alt="Retail analytics dashboard">
+                        </div>
+                        <div class="feature-body">
+                            <h3>Retail Footfall & Conversion</h3>
+                            <p>Delivered a store-level command center that blends point-of-sale, IoT traffic counters, and workforce planning for smarter staffing decisions.</p>
+                            <ul>
+                                <li>Metrics: Traffic vs. conversions, staff efficiency</li>
+                                <li>Features: Geospatial drilldowns, goal tracking</li>
+                                <li>Download: <a href="assets/files/retail-footfall-workbook.txt" class="inline-link" download>Workbook checklist</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img src="assets/images/logistics-pulse.svg" alt="Operations dashboard">
+                        </div>
+                        <div class="feature-body">
+                            <h3>Logistics Pulse Monitor</h3>
+                            <p>Automated carrier performance reporting with advanced DAX calculations and dynamic commentary for weekly executive briefings.</p>
+                            <ul>
+                                <li>Metrics: On-time % trends, cost per route</li>
+                                <li>Features: Scenario toggles, mobile layout</li>
+                                <li>Download: <a href="assets/files/logistics-pulse-overview.txt" class="inline-link" download>Enablement pack</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="uploads" class="uploads section" aria-labelledby="uploads-title">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">Latest uploads</p>
+                        <h2 id="uploads-title">Fresh Power BI artifacts</h2>
+                    </div>
+                    <a class="btn btn-secondary" href="mailto:hello@alexmorgananalytics.com">Send a brief</a>
+                </div>
+                <div class="uploads-grid">
+                    <article class="upload-card">
+                        <img src="assets/images/churn-warning.svg" alt="Churn early warning screenshot">
+                        <div class="upload-body">
+                            <h3>Churn Early Warning System</h3>
+                            <p>Binary risk scoring with proactive playbook recommendations. Includes semantic model snippets and alert annotations.</p>
+                            <div class="asset-links">
+                                <a class="btn btn-secondary" href="https://app.powerbi.com/view?r=eyJrIjoiZjQzNDllM2EtYzY5Mi00MmVjLTliMDUtNjhhMDg2OTQ5MGY5IiwidCI6IjE0NmUxMTA0LWY5OTUtNDQ4Ny1hYWQyLTI4NzJiNzhiZGZkMiIsImMiOjh9" target="_blank" rel="noreferrer">View live sample</a>
+                                <a class="inline-link" href="assets/files/churn-warning-dax-snippets.txt" download>DAX snippets</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="upload-card">
+                        <img src="assets/images/revenue-intelligence.svg" alt="Revenue dashboard thumbnail">
+                        <div class="upload-body">
+                            <h3>Executive KPI Wallboard</h3>
+                            <p>Curated view for leadership with dynamic commentary, KPI benchmarking, and one-click export automation.</p>
+                            <div class="asset-links">
+                                <a class="btn btn-secondary" href="#featured">Explore case study</a>
+                                <a class="inline-link" href="assets/files/subscription-revenue-case-study.txt" download>Download brief</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="upload-card">
+                        <img src="assets/images/retail-footfall.svg" alt="Retail dashboard thumbnail">
+                        <div class="upload-body">
+                            <h3>In-store Experience Tracker</h3>
+                            <p>Footfall to conversion storyline with what-if scenarios and annotated insights for store managers.</p>
+                            <div class="asset-links">
+                                <a class="btn btn-secondary" href="assets/files/retail-footfall-workbook.txt" download>Download guide</a>
+                                <a class="inline-link" href="mailto:hello@alexmorgananalytics.com?subject=Retail%20Tracker%20Demo">Request demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="showcase section" aria-labelledby="showcase-title">
+            <div class="container">
+                <h2 id="showcase-title">Dashboard gallery</h2>
+                <p class="section-intro">A curated selection of Power BI visuals, annotated insights, and project files. Click through to explore the storytelling behind each metric.</p>
+                <div class="showcase-grid">
+                    <article class="showcase-card">
+                        <h3>Churn Early Warning System</h3>
+                        <p>Predictive visuals that flag at-risk customers with dynamic thresholds and highlight recommended actions.</p>
+                        <div class="asset-links">
+                            <a href="#" class="btn btn-secondary">Open live report</a>
+                            <a href="#" class="inline-link">Download PBIX</a>
+                        </div>
+                    </article>
+                    <article class="showcase-card">
+                        <h3>Supply Chain Heatmap</h3>
+                        <p>Interactive map with KPI cards and smart tooltips guiding teams to bottlenecks within seconds.</p>
+                        <div class="asset-links">
+                            <a href="#" class="btn btn-secondary">View screenshot</a>
+                            <a href="#" class="inline-link">Download deck</a>
+                        </div>
+                    </article>
+                    <article class="showcase-card">
+                        <h3>Marketing Attribution Tracker</h3>
+                        <p>Combines campaign spend, lead scoring, and pipeline velocity to show true ROI across channels.</p>
+                        <div class="asset-links">
+                            <a href="#" class="btn btn-secondary">Launch report</a>
+                            <a href="#" class="inline-link">See notes</a>
+                        </div>
+                    </article>
+                    <article class="showcase-card">
+                        <h3>Workforce Wellness Pulse</h3>
+                        <p>Employee engagement surveys, absenteeism trends, and sentiment analysis displayed with narrative callouts.</p>
+                        <div class="asset-links">
+                            <a href="#" class="btn btn-secondary">Preview visuals</a>
+                            <a href="#" class="inline-link">Download PDF</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process section" aria-labelledby="process-title">
+            <div class="container">
+                <h2 id="process-title">Collaborating with me</h2>
+                <div class="process-grid">
+                    <article class="process-step">
+                        <span class="step-number">01</span>
+                        <h3>Discover the vision</h3>
+                        <p>We map out goals, success metrics, and existing workflows to align every visualization to decision-making moments.</p>
+                    </article>
+                    <article class="process-step">
+                        <span class="step-number">02</span>
+                        <h3>Design & prototype</h3>
+                        <p>Low-fidelity sketches and theme exploration lead to interactive Power BI prototypes ready for stakeholder feedback.</p>
+                    </article>
+                    <article class="process-step">
+                        <span class="step-number">03</span>
+                        <h3>Deliver & empower</h3>
+                        <p>Final dashboards include documentation, video walkthroughs, and enablement sessions so teams can self-serve insights.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section" aria-labelledby="cta-title">
+            <div class="container cta-content">
+                <div>
+                    <h2 id="cta-title">Need a Power BI partner for your next initiative?</h2>
+                    <p>Share your project brief and I'll respond within one business day with availability, timeline, and a tailored analytics plan.</p>
+                </div>
+                <a class="btn btn-primary" href="#contact">Start a project</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-text">
+                        <p class="eyebrow">Contact</p>
+                        <h2 id="contact-title">Let's co-create your next dashboard.</h2>
+                        <p>Send me a message with your analytics challenge or attach sample files for review. I'm happy to record a preview demo tailored to your data.</p>
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> <a href="mailto:hello@alexmorgananalytics.com">hello@alexmorgananalytics.com</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/alexmorgan</a></li>
+                            <li><strong>Location:</strong> Remote (UTC+3) • Available worldwide</li>
+                        </ul>
+                    </div>
+                    <form class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                        <label for="project">Project outline</label>
+                        <textarea id="project" name="project" placeholder="Tell me about the dashboards or data you'd like to explore" rows="4"></textarea>
+
+                        <label for="files">Share files or links</label>
+                        <input type="url" id="files" name="files" placeholder="URL to PBIX, OneDrive, or screenshots">
+
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Alex Morgan Analytics. Crafting decision-ready Power BI experiences.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to top</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

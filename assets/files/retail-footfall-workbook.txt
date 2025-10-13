@@ -1,0 +1,20 @@
+Retail Footfall & Conversion Command Center
+==========================================
+
+Key questions answered
+----------------------
+- Which stores and dayparts convert traffic most efficiently?
+- How do weather, promotions, and staffing interplay with conversions?
+- What staffing plan closes the gap to weekly targets?
+
+Dataset notes
+-------------
+- Source systems: POS, IoT door counters, workforce management, promotion calendar
+- Grain: Store-day-hour with incremental refresh and dataflows for cleansing
+- Sensitive fields redacted; replace with your own lookups before sharing externally
+
+How to use this file
+--------------------
+1. Open the PBIX and refresh against your data gateway.
+2. Review the "Scenario Planner" page to simulate labor adjustments.
+3. Export the "Exec Snapshot" to PDF for stakeholders each Monday.

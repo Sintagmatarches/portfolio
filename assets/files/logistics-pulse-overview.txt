@@ -1,0 +1,18 @@
+Logistics Pulse Monitor Overview
+================================
+
+Operational focus
+-----------------
+- Monitor on-time performance (OTP) across carriers
+- Track average cost per route with week-over-week variance
+- Surface aging shipments and automate escalations
+
+Model architecture
+------------------
+- Azure Data Factory orchestrates ingestion from TMS, telematics, and vendor scorecards.
+- Power Query folds transformations into lakehouse tables for reproducible refreshes.
+- Calculation groups provide scenario toggles for baseline, stretch, and blackout scenarios.
+
+Enablement package
+------------------
+This download includes the KPI dictionary, DAX reference, and a quick-start guide for operations analysts.

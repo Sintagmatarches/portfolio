@@ -1,0 +1,24 @@
+Churn Early Warning DAX Snippets
+================================
+
+Measures included
+-----------------
+1. AtRiskMRR =
+   VAR ActiveRevenue = CALCULATE([TotalMRR], 'Customers'[Status] = "Active")
+   VAR RiskScore = CALCULATE([ChurnScore], 'Customers'[RiskFlag] = TRUE())
+   RETURN ActiveRevenue * RiskScore
+
+2. PlaybookRecommendation =
+   SWITCH(TRUE(),
+       [ChurnScore] >= 0.8, "Executive Call",
+       [ChurnScore] >= 0.6, "Customer Success Outreach",
+       [ChurnScore] >= 0.4, "Monitor",
+       "Healthy")
+
+3. Alert Annotation =
+   VAR Threshold = 0.65
+   RETURN IF([ChurnScore] > Threshold, "🚨 Alert raised", "✅ Stable")
+
+Usage notes
+-----------
+Paste these into your semantic model and adapt the table references. Conditional formatting expressions are provided within the PBIX bookmark.

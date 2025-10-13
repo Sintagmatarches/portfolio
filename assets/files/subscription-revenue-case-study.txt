@@ -1,0 +1,18 @@
+Subscription Revenue Intelligence
+=================================
+
+Summary
+-------
+- Audience: SaaS leadership team (ARR $40M)
+- Objective: unify CRM, billing, and product usage metrics to monitor recurring revenue health
+- Impact: eliminated 18 manual slide decks per quarter and unlocked proactive churn prevention workflows
+
+Highlights
+----------
+1. Data model blends Salesforce, Stripe, and Product telemetry in a star schema with incremental refresh.
+2. Dynamic cohort visuals allow executives to compare plan upgrades vs. downgrades across 12 month windows.
+3. DAX measures for leading indicators (activation velocity, logo retention) feed anomaly detection logic.
+
+Next steps
+----------
+Download the PBIX to explore the bookmarks and commentary. Reach out if you'd like the semantic model template.

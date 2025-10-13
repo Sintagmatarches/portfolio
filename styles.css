@@ -321,16 +321,47 @@ a:focus-visible {
 
 .showcase-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 .showcase-card {
-    background: rgba(15, 23, 42, 0.85);
-    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: linear-gradient(160deg, rgba(148, 163, 184, 0.18), rgba(30, 64, 175, 0.08));
+    border: 1px solid rgba(148, 163, 184, 0.15);
     border-radius: var(--border-radius);
-    padding: 1.75rem;
+    padding: clamp(1.75rem, 2.5vw, 2.25rem);
     box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    backdrop-filter: blur(10px);
+}
+
+.showcase-card figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.showcase-card figcaption {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.showcase-meta {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.35rem;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.showcase-card p {
+    margin: 0;
+    color: var(--color-muted);
 }
 
 .uploads-grid {

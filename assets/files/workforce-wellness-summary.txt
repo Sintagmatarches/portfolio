@@ -1,0 +1,14 @@
+Workforce Wellness Pulse - Executive Summary
+-------------------------------------------
+Mission:
+Give HR and People Ops a real-time pulse on morale, workload balance, and burnout risk.
+
+Dashboard features:
+- Sentiment analysis from survey verbatims summarised with AI-driven keywords.
+- Absenteeism heatmap by department layered with productivity signals and overtime.
+- Power Automate flows send wellbeing nudges and collect follow-up feedback.
+
+Actions:
+- Monitor the "Wellness Score" trend for significant dips and coordinate outreach.
+- Use the "Engagement Drivers" visual to discover positive or negative themes.
+- Share the "Insights Recap" PDF export after monthly leadership reviews.

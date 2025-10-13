@@ -1,0 +1,13 @@
+Marketing Attribution Tracker - Optimisation Playbook
+-----------------------------------------------------
+Use this guide to interpret the Power BI report and activate winning acquisition tactics.
+
+Insights included:
+- Spend vs. pipeline velocity matrix exposes channels that need nurturing or investment.
+- Incrementality models combine first-touch and multi-touch credit to estimate true ROI.
+- What-if parameter controls allow scenario planning for budget shifts across quarters.
+
+Recommended workflow:
+1. Review the "Cohort ROI" page to identify campaigns exceeding CAC targets.
+2. Use the "Lead Quality" tab to compare conversion rates across key segments.
+3. Export the "Action Queue" to assign next steps to marketing owners.

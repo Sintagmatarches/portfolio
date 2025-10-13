@@ -1,0 +1,14 @@
+Churn Early Warning System - Case Notes
+---------------------------------------
+Objective:
+Provide customer success with forward-looking churn signals so action plans can be prioritised before renewals.
+
+Highlights:
+- Binary churn classification layered with cohort trend visuals.
+- DAX pattern uses CALCULATE with time intelligence to compare risk evolution week over week.
+- Integrated Teams alerts trigger when an account exceeds the risk tolerance threshold.
+
+Usage tips:
+- Start with the Risk Overview page to scan customer health segments.
+- Drill into Playbooks to understand recommended retention motions.
+- Filter by segment or CSM owner to personalise follow-up plans.

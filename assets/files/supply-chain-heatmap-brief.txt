@@ -1,0 +1,14 @@
+Supply Chain Heatmap - Enablement Brief
+---------------------------------------
+Purpose:
+Deliver a unified view of carrier performance and distribution centre throughput to logistics leads.
+
+Key elements:
+- Shape maps blend dwell time, cost per route, and on-time percentage in a single glance.
+- Metrics sourced from Azure Synapse pipelines with hourly refresh through Data Factory.
+- Tooltip drillthrough exposes shipment-level commentary captured by regional teams.
+
+How to use:
+1. Review the Route Health overview to prioritise underperforming lanes.
+2. Filter by carrier to compare reliability versus spend targets.
+3. Export the "Exception List" table for weekly stand-up actions.

@@ -137,7 +137,7 @@ h1 {
 .file-list li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-between: space-between;
     gap: 1rem;
     padding: 0.9rem 1.1rem;
     border-radius: calc(var(--radius) - 16px);
@@ -162,6 +162,15 @@ h1 {
     text-align: center;
     color: var(--text-muted);
     font-size: 0.95rem;
+    /* Initially hidden; toggled via JavaScript */
+    display: none;
+}
+
+/* Visual highlight for drop zones when dragging files over them */
+.dropzone.dragover {
+    color: var(--accent);
+    border-color: var(--accent-strong);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {

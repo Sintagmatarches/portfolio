@@ -17,11 +17,13 @@
             </div>
 
             <div class="upload-grid">
-                <label class="dropzone" for="photo-input">
+                <!-- Photo drop zone: accepts only image files -->
+                <label id="photo-dropzone" class="dropzone" for="photo-input" data-type="photo">
                     <span>Добавить фото</span>
                     <input id="photo-input" type="file" accept="image/*" multiple>
                 </label>
-                <label class="dropzone" for="file-input">
+                <!-- File drop zone: accepts any file type -->
+                <label id="file-dropzone" class="dropzone" for="file-input" data-type="file">
                     <span>Добавить файл</span>
                     <input id="file-input" type="file" multiple>
                 </label>
@@ -29,6 +31,8 @@
 
             <div class="gallery" id="gallery" aria-live="polite"></div>
             <ul class="file-list" id="file-list" aria-live="polite"></ul>
+            <!-- Hint displayed when no photos or files have been added -->
+            <p id="empty-hint" class="empty-hint">Пока нет фотографий или файлов. Добавьте их выше.</p>
         </section>
     </main>
 

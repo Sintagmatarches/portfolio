@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <!-- Google Fonts: Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,27 +17,16 @@
             <div class="card-header">
                 <h1 id="title">Portfolio</h1>
             </div>
-
-            <div class="upload-grid">
-                <!-- Photo drop zone: accepts only image files -->
-                <label id="photo-dropzone" class="dropzone" for="photo-input" data-type="photo">
-                    <span>Добавить фото</span>
-                    <input id="photo-input" type="file" accept="image/*" multiple>
-                </label>
-                <!-- File drop zone: accepts any file type -->
-                <label id="file-dropzone" class="dropzone" for="file-input" data-type="file">
-                    <span>Добавить файл</span>
-                    <input id="file-input" type="file" multiple>
-                </label>
+            <!--
+            The original upload buttons and drag‑and‑drop zones have been removed.
+            Instead, the following image is displayed. It shows the median salary
+            by county in Estonia for 2025 along with additional context. The image
+            is stored in the `assets` directory.
+            -->
+            <div class="image-container">
+                <img src="assets/median-salary.png" alt="Median salary by county in Estonia" class="chart-image">
             </div>
-
-            <div class="gallery" id="gallery" aria-live="polite"></div>
-            <ul class="file-list" id="file-list" aria-live="polite"></ul>
-            <!-- Hint displayed when no photos or files have been added -->
-            <p id="empty-hint" class="empty-hint">Пока нет фотографий или файлов. Добавьте их выше.</p>
         </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>

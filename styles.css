@@ -1,3 +1,11 @@
+/*
+ * This stylesheet is based on the original portfolio site. It defines a
+ * modern dark‑themed card layout with responsive spacing, typography and
+ * accent colours. A new `.chart-image` class has been added for displaying
+ * the salary chart image. Unused classes related to file uploads remain
+ * for reference but are not used in the simplified page.
+ */
+
 :root {
     --bg: radial-gradient(circle at 20% 20%, rgba(109, 221, 255, 0.35), transparent 60%),
         radial-gradient(circle at 80% 0%, rgba(244, 176, 255, 0.3), transparent 65%),
@@ -56,6 +64,12 @@ h1 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+
+/*
+ * The original `.upload-grid`, `.dropzone`, `.gallery`, `.file-list` and
+ * `.empty-hint` styles are retained for completeness but are unused in
+ * this simplified layout. You may safely remove them if desired.
+ */
 
 .upload-grid {
     display: grid;
@@ -137,7 +151,6 @@ h1 {
 .file-list li {
     display: flex;
     align-items: center;
-    justify-between: space-between;
     gap: 1rem;
     padding: 0.9rem 1.1rem;
     border-radius: calc(var(--radius) - 16px);
@@ -162,7 +175,6 @@ h1 {
     text-align: center;
     color: var(--text-muted);
     font-size: 0.95rem;
-    /* Initially hidden; toggled via JavaScript */
     display: none;
 }
 
@@ -177,12 +189,29 @@ h1 {
     .card {
         padding: 1.75rem;
     }
-
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-
     .gallery img {
         height: 130px;
     }
+}
+
+/*
+ * New styles for the salary chart. The image fills the available width
+ * while preserving its aspect ratio. A subtle border radius ties it in
+ * with the overall card design, and a drop shadow adds depth.
+ */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.chart-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: calc(var(--radius) - 18px);
+    display: block;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
 }

@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <!-- Google Fonts: Manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="page">
-        <section class="card" aria-labelledby="title">
-            <div class="card-header">
-                <h1 id="title">Portfolio</h1>
-            </div>
-            <!--
-            The original upload buttons and drag‑and‑drop zones have been removed.
-            Instead, the following image is displayed. It shows the median salary
-            by county in Estonia for 2025 along with additional context. The image
-            is stored in the `assets` directory.
-            -->
-            <div class="image-container">
-                <img src="assets/median-salary.png" alt="Median salary by county in Estonia" class="chart-image">
-            </div>
-        </section>
-    </main>
+  <main class="page">
+    <!-- Project 1 -->
+    <section class="card" aria-labelledby="title1">
+      <div class="card-header"><h1 id="title1">PORTFOLIO</h1></div>
+      <div class="image-container">
+        <img src="assets/median-salary.png"
+             alt="Median salary 2025 by county in Estonia with bar chart, choropleth map and time-series."
+             class="chart-image">
+      </div>
+      <p class="note">Source: Statistics Estonia</p>
+    </section>
+
+    <!-- Project 2 -->
+    <section class="card" aria-labelledby="title2">
+      <div class="card-header"><h2 id="title2">District Heat Price (€/MWh), by County</h2></div>
+      <div class="image-container">
+        <img src="assets/heat-price.png"
+             alt="Average district heat price in Estonia by county, in EUR per MWh."
+             class="chart-image">
+      </div>
+      <p class="note">Source: Estonian Competition Authority (Konkurentsiamet)</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

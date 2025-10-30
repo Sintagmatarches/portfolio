@@ -1,1 +1,1 @@
-/* no JS needed for static tiles */
+document.getElementById('year').textContent = new Date().getFullYear();

@@ -1,38 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Science Portfolio — Your Name</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
-    <!-- Project 1 (now first): Heating -->
-    <section class="card" aria-labelledby="title1">
-      <div class="card-header"><h1 id="title1">PORTFOLIO</h1></div>
-      <div class="image-container">
-        <img src="assets/heat-price.png"
-             alt="Average heating price by county in Estonia, EUR per MWh."
-             class="chart-image">
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="#top">Your Name</a>
+      <nav class="navigation" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Data Science • Analytics • Visualization</p>
+          <h1>Turning data into clear, decision‑ready stories.</h1>
+          <p class="lead">I build clean visuals and compact dashboards. Below are two recent pieces — salary trends across Estonia and heating price comparison by county.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See projects</a>
+            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
       </div>
-      <p class="note">Average heating price by county (€/MWh), Estonia — Source: Estonian Competition Authority</p>
     </section>
 
-    <!-- Project 2 (now second): Salary -->
-    <section class="card" aria-labelledby="title2">
-      <div class="card-header"><h2 id="title2">Median Salary by County</h2></div>
-      <div class="image-container">
-        <img src="assets/median-salary.png"
-             alt="Median salary 2025 by county in Estonia with bar chart, choropleth map and time-series."
-             class="chart-image">
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p class="muted">A focused selection — simple, readable, and practical.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <figure class="card-media">
+              <img src="assets/heat-price.png" alt="Average heating price by county in Estonia (EUR per MWh)">
+            </figure>
+            <div class="card-body">
+              <h3>Heating Price by County</h3>
+              <p>Average heating price (€/MWh) across Estonian counties. Clean bar‑chart view for quick comparison.</p>
+              <ul class="meta">
+                <li><strong>Type:</strong> Static visualization</li>
+                <li><strong>Source:</strong> Estonian Competition Authority</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="assets/heat-price.png" target="_blank" rel="noreferrer">Open image</a>
+                <a class="btn btn-ghost" href="#contact">Discuss</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <figure class="card-media">
+              <img src="assets/median-salary.png" alt="Median salary 2025 by county in Estonia with bar chart, choropleth map and time‑series.">
+            </figure>
+            <div class="card-body">
+              <h3>Median Salary (2025)</h3>
+              <p>Medians by county with a quick map and trendlines over time. Clear structure for a high‑level read.</p>
+              <ul class="meta">
+                <li><strong>Type:</strong> Static visualization</li>
+                <li><strong>Source:</strong> Statistics Estonia</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="assets/median-salary.png" target="_blank" rel="noreferrer">Open image</a>
+                <a class="btn btn-ghost" href="#contact">Discuss</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-      <p class="note">Median salary by county, Estonia (2025) — Source: Statistics Estonia</p>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>About</h2>
+          <p>I prefer compact visuals and plain language. My stack: Python, SQL, a bit of JavaScript for static sites, and a lot of attention to typography and color.</p>
+          <p>For this site I kept a minimal layout and your blue‑violet gradient palette.</p>
+        </div>
+        <div class="highlights">
+          <div class="hl">
+            <span class="kbd">Python</span>
+            <span class="kbd">Pandas</span>
+            <span class="kbd">Matplotlib</span>
+            <span class="kbd">SQL</span>
+            <span class="kbd">HTML/CSS</span>
+          </div>
+          <p class="muted">Available for small, well‑defined projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-card">
+        <div>
+          <h2>Contact</h2>
+          <p>Tell me a bit about your data and the decision you want to support. I’ll reply with next steps.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="mailto:hello@example.com">Email me</a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name</p>
+      <nav aria-label="Footer">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

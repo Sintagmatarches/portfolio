@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Science Portfolio — Your Name</title>
+  <title>Data Science Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -12,9 +12,11 @@
 <body>
   <header class="site-header">
     <div class="container header-content">
-      <a class="logo" href="#top">Your Name</a>
+      <a class="logo" href="#top">Portfolio</a>
       <nav class="navigation" aria-label="Primary">
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#courses">Courses</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -26,11 +28,11 @@
       <div class="container hero-inner">
         <div>
           <p class="eyebrow">Data Science • Analytics • Visualization</p>
-          <h1>Turning data into clear, decision‑ready stories.</h1>
-          <p class="lead">I build clean visuals and compact dashboards. Below are two recent pieces — salary trends across Estonia and heating price comparison by county.</p>
+          <h1>Clear visuals. Plain words. Decision‑ready output.</h1>
+          <p class="lead">Two recent visuals below. Full skillset and coursework included so you see the toolbox, not a resume.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">See projects</a>
-            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            <a class="btn btn-secondary" href="#skills">See skills</a>
           </div>
         </div>
       </div>
@@ -40,7 +42,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Projects</h2>
-          <p class="muted">A focused selection — simple, readable, and practical.</p>
+          <p class="muted">Compact, readable, and to the point.</p>
         </div>
 
         <div class="cards">
@@ -50,14 +52,13 @@
             </figure>
             <div class="card-body">
               <h3>Heating Price by County</h3>
-              <p>Average heating price (€/MWh) across Estonian counties. Clean bar‑chart view for quick comparison.</p>
+              <p>Average heating price (€/MWh) across Estonian counties. Quick comparison baseline.</p>
               <ul class="meta">
                 <li><strong>Type:</strong> Static visualization</li>
                 <li><strong>Source:</strong> Estonian Competition Authority</li>
               </ul>
               <div class="card-actions">
                 <a class="btn btn-primary" href="assets/heat-price.png" target="_blank" rel="noreferrer">Open image</a>
-                <a class="btn btn-ghost" href="#contact">Discuss</a>
               </div>
             </div>
           </article>
@@ -68,17 +69,109 @@
             </figure>
             <div class="card-body">
               <h3>Median Salary (2025)</h3>
-              <p>Medians by county with a quick map and trendlines over time. Clear structure for a high‑level read.</p>
+              <p>Medians by county with map and time‑series. Built for fast scanning.</p>
               <ul class="meta">
                 <li><strong>Type:</strong> Static visualization</li>
                 <li><strong>Source:</strong> Statistics Estonia</li>
               </ul>
               <div class="card-actions">
                 <a class="btn btn-primary" href="assets/median-salary.png" target="_blank" rel="noreferrer">Open image</a>
-                <a class="btn btn-ghost" href="#contact">Discuss</a>
               </div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header"><h2>Skills</h2></div>
+        <div class="skills-grid">
+          <div>
+            <h3>Hard</h3>
+            <div class="tags">
+              <span class="tag">Python (pandas, NumPy, Jupyter, matplotlib)</span>
+              <span class="tag">SQL (PostgreSQL, MySQL)</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Excel</span>
+              <span class="tag">R</span>
+              <span class="tag">Machine Learning (scikit‑learn)</span>
+            </div>
+          </div>
+          <div>
+            <h3>Soft</h3>
+            <div class="tags">
+              <span class="tag">Perseverance</span>
+              <span class="tag">Self‑motivated</span>
+              <span class="tag">Quick‑learning</span>
+              <span class="tag">Analytical Thinking</span>
+              <span class="tag">Problem‑Solving</span>
+              <span class="tag">Organization</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Strong Memory</span>
+              <span class="tag">Communication</span>
+            </div>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="meta">
+              <li>English — Fluent</li>
+              <li>Estonian — Fluent</li>
+              <li>Russian — Native</li>
+              <li>Ukrainian — Native</li>
+              <li>Czech — Intermediate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section">
+      <div class="container">
+        <div class="section-header"><h2>Courses</h2></div>
+        <div class="list-columns">
+          <div>
+            <h3>Python</h3>
+            <ul class="bullets">
+              <li>Intermediate Python; Functions in Python</li>
+              <li>Data Manipulation with pandas; Joining Data with pandas</li>
+              <li>Exploratory Data Analysis in Python</li>
+            </ul>
+            <h3>SQL</h3>
+            <ul class="bullets">
+              <li>Intermediate SQL; Data Manipulation in SQL; Joining Data in SQL</li>
+              <li>Summary Stats and Window Functions</li>
+              <li>Functions for Manipulating Data in PostgreSQL; Database Design</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Machine Learning / AI</h3>
+            <ul class="bullets">
+              <li>Introduction to Data Science</li>
+              <li>Customer Analytics & A/B Testing in Python</li>
+              <li>Exploratory Data Analysis in Python</li>
+              <li>Working with the OpenAI API</li>
+            </ul>
+            <h3>Statistics</h3>
+            <ul class="bullets">
+              <li>Introduction to Statistics</li>
+              <li>Sampling in Python; Hypothesis Testing in Python</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Visualization & BI</h3>
+            <ul class="bullets">
+              <li>Introduction to Data Visualization with Matplotlib</li>
+              <li>Introduction to Data Visualization with Seaborn</li>
+              <li>Introduction to Power BI</li>
+            </ul>
+            <h3>Excel</h3>
+            <ul class="bullets">
+              <li>Data Preparation in Excel</li>
+              <li>Data Analysis in Excel</li>
+              <li>Data Visualization in Excel</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -87,18 +180,21 @@
       <div class="container about-grid">
         <div>
           <h2>About</h2>
-          <p>I prefer compact visuals and plain language. My stack: Python, SQL, a bit of JavaScript for static sites, and a lot of attention to typography and color.</p>
-          <p>For this site I kept a minimal layout and your blue‑violet gradient palette.</p>
+          <p>Undergraduate in IT Systems Development with a focus on applied statistics, analytics, and visualization.</p>
+          <p>Disciplined and self‑driven; practice daily and learn fast. Comfortable taking a task from raw data to a clean visual.</p>
+          <p class="muted">University of Tartu — B.Sc., 2022–2026 (GPA 4.5)</p>
         </div>
         <div class="highlights">
           <div class="hl">
             <span class="kbd">Python</span>
             <span class="kbd">Pandas</span>
-            <span class="kbd">Matplotlib</span>
             <span class="kbd">SQL</span>
-            <span class="kbd">HTML/CSS</span>
+            <span class="kbd">Power BI</span>
+            <span class="kbd">Excel</span>
+            <span class="kbd">Matplotlib</span>
+            <span class="kbd">scikit‑learn</span>
           </div>
-          <p class="muted">Available for small, well‑defined projects.</p>
+          <p class="muted">Open to small, well‑defined projects.</p>
         </div>
       </div>
     </section>
@@ -107,10 +203,10 @@
       <div class="container contact-card">
         <div>
           <h2>Contact</h2>
-          <p>Tell me a bit about your data and the decision you want to support. I’ll reply with next steps.</p>
+          <p>Email only — no social or phone.</p>
         </div>
         <div>
-          <a class="btn btn-primary" href="mailto:hello@example.com">Email me</a>
+          <a class="btn btn-primary" href="mailto:svyatoslav.baryshpol@gmail.com">svyatoslav.baryshpol@gmail.com</a>
         </div>
       </div>
     </section>
@@ -118,10 +214,11 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Your Name</p>
+      <p>© <span id="year"></span></p>
       <nav aria-label="Footer">
         <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>

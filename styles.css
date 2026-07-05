@@ -30,7 +30,7 @@ a{color:inherit}
 .navigation a{margin-left:1rem;text-decoration:none;opacity:.9}
 .navigation a:hover{opacity:1}
 .hero{padding:4.5rem 0 2.5rem}
-.eyebrow{letter-spacing:.2em;text-transform:uppercase;opacity:.8;margin:0 0 .5rem 0;font-size:.8rem}
+.eyebrow{letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin:0 0 .5rem 0;font-size:.85rem;line-height:1.5}
 .hero h1{margin:.25rem 0 1rem 0;font-size:clamp(2rem,5vw,3rem);line-height:1.1}
 .lead{opacity:.9;max-width:68ch}
 .hero-actions{display:flex;gap:.75rem;margin-top:1rem}
@@ -43,6 +43,7 @@ a{color:inherit}
 .muted{color:var(--muted)}
 .cards{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.card.featured{border-color:rgba(56,189,248,0.35);background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02))}
 .card-media img{width:100%;height:auto}
 .card-body{padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.6rem}
 .meta{list-style:none;margin:.25rem 0 0 0;padding:0;color:var(--muted);font-size:.95rem}

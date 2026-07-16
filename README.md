@@ -12,7 +12,7 @@ This repository hosts the source code for my interactive portfolio website, alon
 ## 🚀 Featured Projects & Reports
 
 ### 1. [European Historical Songbook Web Application](https://european-songbook-portfolio.pages.dev)
-**Role:** Independent Developer & Analyst | **Type:** Bachelor Thesis Project (2025–2026)
+**Role:** Independent Developer & Analyst | **Type:** Bachelor Thesis Project (2025–2026) | **Source Code:** [GitHub Showcase Repository](https://github.com/Sintagmatarches/european-songbook-showcase)
 * Multilingual web application designed for a comprehensive historical song corpus.
 * Built with structured data storage, metadata organization, and role-based access control.
 * Implemented full-text search and retrieval logic with multidimensional filtering across languages, countries, historical periods, years, and authorship metadata.

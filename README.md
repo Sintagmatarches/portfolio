@@ -1,36 +1,57 @@
-# Portfolio Upload Site
+# Sviatoslav Baryshpol — Data Analyst Portfolio
 
-Этот репозиторий содержит простой веб‑сайт для портфолио. В нём можно добавлять фотографии и файлы, просматривать их прямо на странице и скачивать обратно. Проект написан на чистых HTML, CSS и JavaScript, без сторонних библиотек.
+[![Live Demo](https://img.shields.io/badge/Live_Portfolio-sintagmatarches.github.io%2Fportfolio-blue?style=for-the-badge&logo=github)](https://sintagmatarches.github.io/portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sviatoslav_Baryshpol-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sviatoslav-baryshpol/)
 
-## Что изменено и почему
+Welcome to my personal Data Analyst portfolio website and project repository. I am a **Bachelor of Science in Engineering graduate in Information Technology Systems Development**, experienced in data analysis, SQL, Python, Power BI, database systems, applied statistics, and data storytelling.
 
-* **Драг‑и‑дроп**. Теперь файлы можно не только выбирать через диалог, но и перетаскивать в соответствующие области. Срабатывает даже если несколько файлов выделено.
-* **Подсветка области**. При перетаскивании рамки становятся ярче, показывая, что файл можно сбросить.
-* **Проверка типа**. В фото‑зону принимаются только изображения (тип `image/*`). Файлы других типов автоматически игнорируются.
-* **Подсказка о пустой галерее**. Если на странице нет ни одной фотографии или файла, отображается текст «Пока нет фотографий или файлов. Добавьте их выше.». Когда появляется хотя бы один элемент, подсказка скрывается.
-* **Улучшенная организация кода**. Вся логика загрузки вынесена в отдельные функции, что упростит дальнейшее расширение.
+This repository hosts the source code for my interactive portfolio website, alongside featured analytical reports, visualizations, and project documentation.
 
-## Как запустить локально
+---
 
-1. Склонируйте репозиторий или скопируйте файлы `index.html`, `styles.css`, `script.js` и `README.md` в каталог на своём компьютере.
-2. Откройте файл `index.html` в браузере (двойной щелчок или через `file:///…`).
-3. Добавляйте фотографии и файлы через соответствующие кнопки или перетаскиванием.
+## 🚀 Featured Projects & Reports
 
-> ⚠️ Файлы загружаются в память браузера и не сохраняются на сервере. При обновлении страницы все элементы исчезнут.
+### 1. [European Historical Songbook Web Application](https://european-songbook-portfolio.pages.dev)
+**Role:** Independent Developer & Analyst | **Type:** Bachelor Thesis Project (2025–2026)
+* Multilingual web application designed for a comprehensive historical song corpus.
+* Built with structured data storage, metadata organization, and role-based access control.
+* Implemented full-text search and retrieval logic with multidimensional filtering across languages, countries, historical periods, years, and authorship metadata.
 
-## Как опубликовать на GitHub Pages
+### 2. [E-commerce Funnel Analysis (theLook Dataset)](https://sintagmatarches.github.io/portfolio/assets/case-study-1-ecommerce-funnel.pdf)
+**Role:** Data Analyst | **Tools:** Google BigQuery (SQL), Power BI
+* Conducted an end-to-end event-level funnel analysis comparing **843,608 product**, **593,628 cart**, and **181,420 purchase** events.
+* Identified that the primary volume drop (`412,208 events`) occurs between cart and checkout (`30.56% conversion from cart`).
+* Evaluated geographical and urban loss concentrations across 10+ major markets (China, US, Brazil) and leading cities (Shanghai, Beijing, Seoul).
 
-1. **Замените файлы**. Перейдите в репозиторий [`portfolio`](https://github.com/Sintagmatarches/portfolio) и замените содержимое файлов `index.html`, `script.js` и `styles.css` на версии из этого каталога (можно загрузить файлы напрямую через веб‑интерфейс GitHub). Добавьте файл `README.md`, чтобы сохранить описание.
-2. **Закоммитьте и отправьте изменения** в ветку `main`.
-3. **Включите GitHub Pages**. В настройках репозитория (`Settings` → `Pages`) выберите `main` в качестве исходной ветки и корневую папку (`/`). Сохраните изменения.
-4. Через несколько минут страница будет доступна по адресу `https://<ваш_логин>.github.io/portfolio/`. Если вы уже включали Pages, возможно, понадобится отключить и включить заново.
+### 3. Data Analysis Practice & Visualizations
+* **Data Analysis Assignments:** Practical data cleaning, exploratory data analysis (EDA), correlation, and regression tasks in Python, SQL, Excel, and Power BI.
+* **Heating Price by County:** Comparative regional energy cost analysis aligned for side-by-side assessment across counties.
+* **Median Salary by County (2025):** Small-multiple analysis featuring bar charts, choropleth mapping, and time-series trend views.
 
-После публикации сайт будет загружаться из репозитория и работать так же, как локально. Поскольку GitHub Pages — это статический хостинг, загруженные через сайт файлы не будут сохраняться в репозиторий. Чтобы добавить изображения или документы в портфолио для постоянного хранения, загрузите их в репозиторий вручную (например, в папку `assets/`) и обновите код, чтобы отображать эти файлы.
+---
 
-## Дополнительные идеи
+## 🛠️ Technical Stack & Skills
 
-* Добавить использование [IndexedDB](https://developer.mozilla.org/ru/docs/Web/API/IndexedDB_API) для сохранения списка загруженных объектов между обновлениями страницы.
-* Настроить серверную часть (например, на Node.js/Express с Multer), чтобы сохранять загруженные файлы на диск и отдавать их при повторном обращении.
-* Автоматически подгружать изображения и документы из папок репозитория через API GitHub. Это потребует работы с CORS и авторизацией.
+* **Databases & Querying:** SQL, PostgreSQL, Google BigQuery, Database Design & Modeling
+* **Programming & Analysis:** Python (`pandas`, `numpy`, exploratory data analysis, data manipulation)
+* **Business Intelligence & Visualization:** Power BI (Interactive Dashboards, DAX), Excel, Matplotlib, Seaborn
+* **Statistics & Math:** Applied Statistics, Hypothesis Testing, A/B Testing, Sampling, Regression Analysis
+* **Tools & Practices:** Git, GitHub, Software Testing, Version Control
 
-Если возникнут вопросы по публикации или дальнейшему развитию проекта, обратитесь к документации GitHub Pages【772497997461898†L0-L37】 и справочным материалам по Express/Multer【473956760211811†L81-L150】.
+---
+
+## 🌐 Languages
+
+* **English** — Fluent
+* **Estonian** — Fluent
+* **Russian** — Native
+* **Ukrainian** — Native
+* **Czech** — Intermediate
+
+---
+
+## 📬 Contact & Connect
+
+* **Email:** [svyatoslav.baryshpol@gmail.com](mailto:svyatoslav.baryshpol@gmail.com)
+* **LinkedIn:** [Sviatoslav Baryshpol](https://www.linkedin.com/in/sviatoslav-baryshpol/)
+* **GitHub:** [@Sintagmatarches](https://github.com/Sintagmatarches)

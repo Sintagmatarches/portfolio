@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Data Analyst portfolio featuring SQL, Python, Power BI, and data product projects." />
   <title>Sviatoslav Baryshpol | Data Analyst Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260716-readme-v1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260716-projects-v1" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-content">
-      <a class="logo" href="#top" style="font-size: 1.15rem;">Sviatoslav Baryshpol</a>
-      <nav class="navigation" aria-label="Primary">
+      <a class="logo" href="#top">Sviatoslav Baryshpol</a>
+      <nav class="navigation" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#courses">Courses</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -25,281 +24,157 @@
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <h1 style="font-size: clamp(2.5rem, 6vw, 3.8rem); margin-top: 0; margin-bottom: 0.35rem;">Sviatoslav Baryshpol</h1>
-          <p style="font-size: 1.45rem; color: var(--primary); font-weight: 600; margin: 0 0 0.6rem 0;">Data Analyst</p>
-          <p class="eyebrow" style="opacity: 0.85; margin-bottom: 1.25rem;">SQL · Python · Excel · Power BI · Statistics · Data Visualization</p>
-          <p class="lead" style="line-height: 1.65;">Bachelor of Science in Engineering graduate in Information Technology Systems Development with experience in data analysis, SQL, Python, and Power BI. For my bachelor thesis, I built and tested a web application for a multilingual historical song corpus with structured data storage, search, filtering, and access control. My background includes database systems, statistics, software testing, and data visualization.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">See projects</a>
-            <a class="btn btn-secondary" href="#skills">See skills</a>
-          </div>
+      <div class="container hero-content">
+        <p class="hero-label">Data Analyst Portfolio</p>
+        <h1>Sviatoslav Baryshpol</h1>
+        <p class="hero-role">Data Analyst <span aria-hidden="true">|</span> SQL · Python · Power BI</p>
+        <p class="hero-summary">I turn raw data into clear metrics, dashboards, and actionable insights.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="https://github.com/Sintagmatarches" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/sviatoslav-baryshpol/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section projects-section">
       <div class="container">
-        <div class="section-header">
-          <h2>Projects & Experience</h2>
-          <p class="muted">Featured software applications, academic coursework, and practical analytics.</p>
+        <div class="section-heading">
+          <p class="section-label">Selected work</p>
+          <h2>Projects</h2>
+          <p>Each case is organized around the business question, the analysis, the result, and the next decision.</p>
         </div>
 
-        <div class="cards" style="margin-bottom: 3rem;">
-          <article class="card featured">
-            <div class="card-body" style="padding: 1.5rem; gap: 0.8rem;">
-              <p class="eyebrow" style="color: var(--primary); margin-bottom: 0;">Independent Developer & Analyst</p>
-              <h3 style="font-size: 1.35rem; margin: 0;">European Historical Songbook Web Application | Bachelor Thesis Project | 2025–2026</h3>
-              <p style="margin: 0; line-height: 1.6;">Built and tested a multilingual web application for a historical song corpus with structured data storage, search, filtering, and access control. Implemented full-text search and retrieval logic with filtering by language, country, period, year, and authorship metadata.</p>
-              <ul class="bullets" style="margin: 0.5rem 0 0 1.1rem; line-height: 1.6;">
-                <li>structured data storage</li>
-                <li>metadata organization</li>
-                <li>full-text search</li>
-                <li>filtering by language, country, period, year, authorship</li>
-                <li>access control</li>
-              </ul>
-              <div class="card-actions" style="margin-top: 0.5rem; flex-wrap: wrap; gap: 0.6rem;">
-                <a class="btn btn-primary" href="https://european-songbook-portfolio.pages.dev" target="_blank" rel="noreferrer" style="font-weight: 600;">Open European Songbook</a>
-                <a class="btn btn-secondary" href="https://github.com/Sintagmatarches/european-songbook-showcase" target="_blank" rel="noreferrer" style="font-weight: 600;">View GitHub Repo</a>
+        <div class="featured-projects">
+          <article class="project-card project-card-featured">
+            <div class="project-topline">
+              <p class="project-number">01</p>
+              <p class="project-tools">BigQuery · SQL · Power BI</p>
+            </div>
+            <h3>E-commerce Funnel Analysis</h3>
+            <p class="project-intro">An event-level analysis of theLook e-commerce data to identify the largest conversion loss and the markets driving the absolute gap.</p>
+
+            <dl class="case-grid">
+              <div>
+                <dt>Question</dt>
+                <dd>Where does the product-to-purchase funnel lose the most volume, and which geographic segments should be investigated first?</dd>
               </div>
-            </div>
-          </article>
-
-          <article class="card featured">
-            <div class="card-body" style="padding: 1.5rem; gap: 0.8rem;">
-              <p class="eyebrow" style="color: var(--primary); margin-bottom: 0;">Academic Coursework, Test Tasks & Independent Learning | 2024–2026</p>
-              <h3 style="font-size: 1.35rem; margin: 0;">Data Analysis Practice</h3>
-              <p style="margin: 0; line-height: 1.6;">Practical data analysis tasks in Python, SQL, Excel, and Power BI, including advertising ROI evaluation and credit-risk prediction assignment.</p>
-              <ul class="bullets" style="margin: 0.5rem 0 0 1.1rem; line-height: 1.6;">
-                <li>data cleaning</li>
-                <li>exploratory analysis</li>
-                <li>visualization</li>
-                <li>correlation analysis</li>
-                <li>regression-based interpretation</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-
-        <div class="section-header" style="margin-top: 1.5rem;">
-          <h3 style="font-size: 1.25rem; opacity: 0.9;">Data Analysis Case Studies & Reports</h3>
-          <p class="muted">In-depth analytical reports and funnel investigations.</p>
-        </div>
-
-        <div class="cards" style="margin-bottom: 3rem;">
-          <article class="card featured">
-            <div class="card-body" style="padding: 1.5rem; gap: 0.8rem;">
-              <p class="eyebrow" style="color: var(--primary); margin-bottom: 0;">Case Study Report | BigQuery & Power BI | 2026</p>
-              <h3 style="font-size: 1.35rem; margin: 0;">E-commerce Funnel Analysis (theLook Dataset)</h3>
-              <p style="margin: 0; line-height: 1.6;">Event-level funnel analysis comparing 843,608 product, 593,628 cart, and 181,420 purchase events using BigQuery and Power BI. Identified that the largest drop (412,208 events) occurs between cart and purchase, with absolute loss concentrated in high-volume regions.</p>
-              <ul class="bullets" style="margin: 0.5rem 0 0 1.1rem; line-height: 1.6;">
-                <li>event-level funnel analysis</li>
-                <li>BigQuery SQL extraction</li>
-                <li>Power BI visualization</li>
-                <li>cart-to-purchase drop analysis</li>
-                <li>country and city segmentation</li>
-              </ul>
-              <div class="card-actions" style="margin-top: 0.5rem;">
-                <a class="btn btn-primary" href="assets/case-study-1-ecommerce-funnel.pdf" target="_blank" rel="noreferrer" style="font-weight: 600;">Read Full Case Study (PDF)</a>
+              <div>
+                <dt>Data</dt>
+                <dd>843,608 product events, 593,628 cart events, and 181,420 purchase events from theLook dataset.</dd>
               </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="section-header" style="margin-top: 1.5rem;">
-          <h3 style="font-size: 1.25rem; opacity: 0.9;">Additional Data Visualizations</h3>
-          <p class="muted">Comparative charts and reporting.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <figure class="card-media">
-              <img src="assets/heat-price.png" alt="Average heat price by county (EUR per MWh)">
-            </figure>
-            <div class="card-body">
-              <h3>Heating Price by County</h3>
-              <p>Average heat price by county. Values aligned for side‑by‑side comparison.</p>
-              <ul class="meta">
-                <li><strong>Type:</strong> Data visualization</li>
-                <li><strong>Tools:</strong> Python, Power BI</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-primary" href="assets/heat-price.png" target="_blank" rel="noreferrer">Open image</a>
+              <div>
+                <dt>Analysis</dt>
+                <dd>Built an event-level funnel, calculated stage conversion, and segmented absolute loss by country and city.</dd>
               </div>
+              <div>
+                <dt>Result</dt>
+                <dd>The largest drop occurs after cart: 412,208 events, with 30.56% cart-to-purchase conversion. China, the United States, and Brazil account for the largest absolute losses.</dd>
+              </div>
+              <div class="case-recommendation">
+                <dt>Recommendation</dt>
+                <dd>Rebuild the funnel at user or session level with chronological steps, then test checkout, shipping, payment, and confirmation events in the highest-volume markets.</dd>
+              </div>
+            </dl>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="assets/case-study-1-ecommerce-funnel.pdf" target="_blank" rel="noreferrer">Read Case Study</a>
             </div>
           </article>
 
-          <article class="card">
-            <figure class="card-media">
-              <img src="assets/median-salary.png" alt="Median salary 2025 by county with bar chart, choropleth map and time‑series.">
-            </figure>
-            <div class="card-body">
-              <h3>Median Salary by County (2025)</h3>
-              <p>Median salary by county with bar chart, map, and trend view. Focus on relative differences.</p>
-              <ul class="meta">
-                <li><strong>Type:</strong> Data visualization</li>
-                <li><strong>Tools:</strong> Python, Power BI</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-primary" href="assets/median-salary.png" target="_blank" rel="noreferrer">Open image</a>
+          <article class="project-card project-card-featured">
+            <div class="project-topline">
+              <p class="project-number">02</p>
+              <p class="project-tools">Data Product · Search · Cloudflare</p>
+            </div>
+            <h3>European Historical Songbook</h3>
+            <p class="project-intro">A multilingual data product for exploring a structured historical song corpus through catalog search, metadata filters, and map navigation.</p>
+
+            <dl class="case-grid">
+              <div>
+                <dt>Question</dt>
+                <dd>How can a large historical corpus remain searchable and understandable across languages, periods, countries, and authorship metadata?</dd>
               </div>
+              <div>
+                <dt>Data</dt>
+                <dd>Structured song and authorship metadata. The public showcase uses 305 sanitized demo entries with a strict production-data boundary.</dd>
+              </div>
+              <div>
+                <dt>Build</dt>
+                <dd>Implemented full-text retrieval, multidimensional filtering, song pages, map navigation, and simulated administration workflows.</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Delivered a runnable public demonstration with an isolated API, no production credentials, and automated checks for data and interface boundaries.</dd>
+              </div>
+              <div class="case-recommendation">
+                <dt>Recommendation</dt>
+                <dd>Keep public and production data paths explicitly separated, and validate search quality as the catalog and metadata model grow.</dd>
+              </div>
+            </dl>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://european-songbook-portfolio.pages.dev/" target="_blank" rel="noreferrer">Open Demo</a>
+              <a class="btn btn-secondary" href="https://github.com/Sintagmatarches/european-songbook-showcase" target="_blank" rel="noreferrer">View Repository</a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header"><h2>Skills</h2></div>
-        <div class="skills-grid">
+        <div class="secondary-heading">
           <div>
-            <h3>Hard Skills</h3>
-            <div class="tags">
-              <span class="tag">SQL</span>
-              <span class="tag">Python</span>
-              <span class="tag">Excel</span>
-              <span class="tag">Power BI</span>
-              <span class="tag">Statistics & Hypothesis Testing</span>
-              <span class="tag">Data Visualization</span>
-              <span class="tag">Git / GitHub</span>
+            <p class="section-label">Additional analyses</p>
+            <h3>Regional comparisons</h3>
+          </div>
+          <p>Compact visual studies kept secondary to the main case work.</p>
+        </div>
+
+        <div class="analysis-grid">
+          <article class="analysis-card">
+            <a class="analysis-image" href="assets/heat-price.png" target="_blank" rel="noreferrer" aria-label="Open heating price visualization">
+              <img src="assets/heat-price.png" alt="Average heat prices by Estonian county shown as a map and ranked bars" loading="lazy">
+            </a>
+            <div class="analysis-content">
+              <p class="project-tools">Power BI · Regional comparison</p>
+              <h4>Heating Price by County</h4>
+              <p>Compared average district-heating prices across counties. The visible range runs from €59/MWh in Saare County to €136/MWh in Ida-Viru County, indicating substantial regional variation.</p>
+              <p class="analysis-next"><strong>Next question:</strong> test whether fuel mix, supplier structure, or network scale explains the gap.</p>
+              <a class="text-link" href="assets/heat-price.png" target="_blank" rel="noreferrer">Open visualization →</a>
             </div>
-          </div>
-          <div>
-            <h3>Soft Skills</h3>
-            <div class="tags">
-              <span class="tag">Analytical thinking</span>
-              <span class="tag">Problem‑solving</span>
-              <span class="tag">Organization</span>
-              <span class="tag">Communication</span>
-              <span class="tag">Self‑driven</span>
-              <span class="tag">Fast learner</span>
+          </article>
+
+          <article class="analysis-card">
+            <a class="analysis-image" href="assets/median-salary.png" target="_blank" rel="noreferrer" aria-label="Open median salary visualization">
+              <img src="assets/median-salary.png" alt="Median salaries by Estonian county with ranked bars, a map, and quarterly trends" loading="lazy">
+            </a>
+            <div class="analysis-content">
+              <p class="project-tools">Power BI · Time series</p>
+              <h4>Median Salary by County</h4>
+              <p>Combined ranking, mapping, and quarterly trends. Harju and Tartu lead the 2025 comparison, while the time series shows broad wage growth with a persistent regional gap.</p>
+              <p class="analysis-next"><strong>Next question:</strong> compare wage growth with industry mix, employment, and regional cost of living.</p>
+              <a class="text-link" href="assets/median-salary.png" target="_blank" rel="noreferrer">Open visualization →</a>
             </div>
-          </div>
-          <div>
-            <h3>Languages</h3>
-            <ul class="meta" style="line-height: 1.8;">
-              <li>English — Fluent</li>
-              <li>Estonian — Fluent</li>
-              <li>Russian — Native</li>
-              <li>Ukrainian — Native</li>
-              <li>Czech — Intermediate</li>
-            </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="courses" class="section">
-      <div class="container">
-        <div class="section-header"><h2>Courses & Training</h2></div>
-        <div class="skills-grid">
-          <div class="card" style="padding: 1.25rem; gap: 0.5rem;">
-            <div style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="color: var(--primary); font-size: 1.2rem;">❖</span>
-              <strong style="font-size: 1.05rem;">DataCamp Career Tracks</strong>
-            </div>
-            <ul class="meta" style="margin: 0.2rem 0 0 1.8rem; line-height: 1.6; color: var(--muted);">
-              <li>• Data Analyst in Python</li>
-              <li>• Associate Data Scientist in Python</li>
-            </ul>
-          </div>
-
-          <div class="card" style="padding: 1.25rem; gap: 0.5rem;">
-            <div style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="color: var(--primary); font-size: 1.2rem;">❖</span>
-              <strong style="font-size: 1.05rem;">SQL & Databases</strong>
-            </div>
-            <ul class="meta" style="margin: 0.2rem 0 0 1.8rem; line-height: 1.6; color: var(--muted);">
-              <li>• Intermediate SQL & Joins</li>
-              <li>• Window Functions & PostgreSQL</li>
-              <li>• Database Design</li>
-            </ul>
-          </div>
-
-          <div class="card" style="padding: 1.25rem; gap: 0.5rem;">
-            <div style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="color: var(--primary); font-size: 1.2rem;">❖</span>
-              <strong style="font-size: 1.05rem;">Python Data Analysis</strong>
-            </div>
-            <ul class="meta" style="margin: 0.2rem 0 0 1.8rem; line-height: 1.6; color: var(--muted);">
-              <li>• Data Manipulation with pandas</li>
-              <li>• Exploratory Data Analysis (EDA)</li>
-              <li>• Data Cleaning & Joining Data</li>
-            </ul>
-          </div>
-
-          <div class="card" style="padding: 1.25rem; gap: 0.5rem;">
-            <div style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="color: var(--primary); font-size: 1.2rem;">❖</span>
-              <strong style="font-size: 1.05rem;">Statistics & Experimentation</strong>
-            </div>
-            <ul class="meta" style="margin: 0.2rem 0 0 1.8rem; line-height: 1.6; color: var(--muted);">
-              <li>• Applied Statistics & Sampling</li>
-              <li>• Hypothesis Testing</li>
-              <li>• Customer Analytics & A/B Testing</li>
-            </ul>
-          </div>
-
-          <div class="card" style="padding: 1.25rem; gap: 0.5rem;">
-            <div style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="color: var(--primary); font-size: 1.2rem;">❖</span>
-              <strong style="font-size: 1.05rem;">BI & Visualization</strong>
-            </div>
-            <ul class="meta" style="margin: 0.2rem 0 0 1.8rem; line-height: 1.6; color: var(--muted);">
-              <li>• Power BI Interactive Dashboards</li>
-              <li>• Matplotlib & Seaborn</li>
-              <li>• Data Storytelling</li>
-            </ul>
-          </div>
-
-          <div class="card" style="padding: 1.25rem; gap: 0.5rem;">
-            <div style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="color: var(--primary); font-size: 1.2rem;">❖</span>
-              <strong style="font-size: 1.05rem;">Machine Learning</strong>
-            </div>
-            <ul class="meta" style="margin-left: 1.8rem; line-height: 1.6; color: var(--muted);">
-              <li>• Intro to Data Science & ML</li>
-              <li>• Supervised & Unsupervised Learning</li>
-              <li>• Working with OpenAI API</li>
-            </ul>
-          </div>
-        </div>
+    <section id="about" class="section about-section">
+      <div class="container compact-section">
+        <p class="section-label">About</p>
+        <h2>Data analysis with a product mindset</h2>
+        <p>I am a University of Tartu graduate with a Bachelor of Science in Engineering in Information Technology Systems Development. I focus on turning complex datasets into clear analysis, practical data products, and decisions people can act on.</p>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container about-grid">
-        <div>
-          <h2>About</h2>
-          <p class="lead" style="margin-top: 0;">Bachelor of Science in Engineering graduate in Information Technology Systems Development.</p>
-          <p style="line-height: 1.6;">My background includes data analysis, SQL, Python, Power BI, database systems, statistics, software testing, and data visualization.</p>
-        </div>
-        <div class="highlights">
-          <div class="hl">
-            <span class="kbd">SQL</span>
-            <span class="kbd">Python</span>
-            <span class="kbd">Excel</span>
-            <span class="kbd">Power BI</span>
-            <span class="kbd">Statistics</span>
-            <span class="kbd">Data Visualization</span>
-            <span class="kbd">Git / GitHub</span>
-          </div>
-          <p class="muted" style="margin-top: 1rem;">Based in Lahti, Finland.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
+    <section id="contact" class="section contact-section">
       <div class="container contact-card">
         <div>
-          <h2>Contact</h2>
-          <p style="margin-bottom: 0.4rem;">Based in <strong>Lahti, Finland</strong>. Open for data analysis opportunities.</p>
-          <p class="muted" style="margin: 0; font-size: 0.95rem;">Please contact me by email or LinkedIn.</p>
+          <p class="section-label">Contact</p>
+          <h2>Lahti, Finland</h2>
+          <p>Open to Data Analyst opportunities.</p>
         </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-top: 0.5rem;">
-          <a class="btn btn-primary" href="mailto:svyatoslav.baryshpol@gmail.com">svyatoslav.baryshpol@gmail.com</a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:svyatoslav.baryshpol@gmail.com">Email</a>
           <a class="btn btn-secondary" href="https://www.linkedin.com/in/sviatoslav-baryshpol/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a class="btn btn-secondary" href="https://github.com/Sintagmatarches" target="_blank" rel="noreferrer">GitHub</a>
         </div>
@@ -308,18 +183,12 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Sviatoslav Baryshpol. Data Analyst Portfolio.</p>
-      <nav aria-label="Footer">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Sviatoslav Baryshpol</p>
+      <p class="languages">Languages: English and Estonian — fluent · Russian and Ukrainian — native · Czech — intermediate</p>
     </div>
   </footer>
 
-  <script src="script.js?v=20260716-readme-v1"></script>
+  <script src="script.js?v=20260716-projects-v1"></script>
 </body>
 </html>

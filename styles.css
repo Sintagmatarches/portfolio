@@ -153,13 +153,6 @@ h4 {
   font-weight: 600;
 }
 
-.hero-summary {
-  max-width: 720px;
-  margin-bottom: 34px;
-  color: #dce6f3;
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-}
-
 .hero-actions,
 .project-actions,
 .contact-actions {
@@ -380,11 +373,6 @@ h4 {
 
 .analysis-content > p:not(.project-tools) {
   color: #cbd8e7;
-}
-
-.analysis-next {
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
 }
 
 .text-link {

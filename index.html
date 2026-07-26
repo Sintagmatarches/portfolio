@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260716-projects-v2" />
+  <link rel="stylesheet" href="styles.css?v=20260726-olist-v1" />
 </head>
 <body>
   <header class="site-header">
@@ -96,7 +96,7 @@
               </div>
               <div>
                 <dt>Data</dt>
-                <dd>Structured song and authorship metadata. The public showcase uses 305 sanitized demo entries with a strict production-data boundary.</dd>
+                <dd>Structured song and authorship metadata. The public showcase contains 305 demo entries.</dd>
               </div>
               <div>
                 <dt>Build</dt>
@@ -115,6 +115,42 @@
             <div class="project-actions">
               <a class="btn btn-primary" href="https://european-songbook-portfolio.pages.dev/" target="_blank" rel="noreferrer">Open Demo</a>
               <a class="btn btn-secondary" href="https://github.com/Sintagmatarches/european-songbook-showcase" target="_blank" rel="noreferrer">View Repository</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-featured">
+            <div class="project-topline">
+              <p class="project-number">03</p>
+              <p class="project-tools">SQL · Power BI · E-commerce</p>
+            </div>
+            <h3>Olist Delivery Reliability and Customer Reviews</h3>
+            <p class="project-intro">An order-level analysis of Brazilian e-commerce deliveries to identify routes with more late orders than expected and measure how delays relate to customer reviews.</p>
+
+            <dl class="case-grid">
+              <div>
+                <dt>Question</dt>
+                <dd>Which delivery routes produced more late orders than expected, and how were late deliveries related to customer reviews?</dd>
+              </div>
+              <div>
+                <dt>Data</dt>
+                <dd>96,470 delivered orders, 95,824 reviewed orders, and 60,551 interstate orders with distance data from the Brazilian E-Commerce Public Dataset by Olist.</dd>
+              </div>
+              <div>
+                <dt>Analysis</dt>
+                <dd>Built an order-level SQL model, compared routes by month and distance band, and separated delivery time before and after carrier handoff.</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Orders delayed by at least one day had a 62.42% bad-review rate versus 9.27% for the comparison group. SP → RJ produced 689.4 late orders above its benchmark, with most additional time appearing after carrier handoff.</dd>
+              </div>
+              <div class="case-recommendation">
+                <dt>Recommendation</dt>
+                <dd>Investigate SP → RJ first, review carrier handoff and intermediate hubs on the priority routes, and track actual, expected, and excess late orders by route each month.</dd>
+              </div>
+            </dl>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="assets/olist-delivery-reliability-case-study.pdf" target="_blank" rel="noreferrer">Read Case Study</a>
             </div>
           </article>
         </div>
@@ -185,6 +221,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260716-projects-v2"></script>
+  <script src="script.js?v=20260726-olist-v1"></script>
 </body>
 </html>

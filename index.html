@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260730-web-projects-first-v1" />
+  <link rel="stylesheet" href="styles.css?v=20260730-visualization-lightbox-v1" />
+  <script src="script.js?v=20260730-visualization-lightbox-v1" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -106,24 +107,24 @@
 
         <div class="visualization-grid">
           <article class="visualization-card">
-            <a class="visualization-image" href="assets/heat-price.png" target="_blank" rel="noreferrer" aria-label="Open heating price visualization">
+            <a class="visualization-image" href="assets/heat-price.png" target="_blank" rel="noreferrer" aria-label="View heating price visualization full size" data-lightbox-title="Heating Price by County" data-lightbox-alt="Average heating prices by Estonian county">
               <img src="assets/heat-price.png" alt="Average heating prices by Estonian county" loading="lazy">
             </a>
             <div>
               <h3>Heating Price by County</h3>
               <p>District-heating price comparison by Estonian county.</p>
-              <a class="project-link" href="assets/heat-price.png" target="_blank" rel="noreferrer">Open image</a>
+              <a class="project-link" href="assets/heat-price.png" target="_blank" rel="noreferrer" data-lightbox-title="Heating Price by County" data-lightbox-alt="Average heating prices by Estonian county">View full size</a>
             </div>
           </article>
 
           <article class="visualization-card">
-            <a class="visualization-image" href="assets/median-salary.png" target="_blank" rel="noreferrer" aria-label="Open median salary visualization">
+            <a class="visualization-image" href="assets/median-salary.png" target="_blank" rel="noreferrer" aria-label="View median salary visualization full size" data-lightbox-title="Median Salary by County" data-lightbox-alt="Median salaries by Estonian county">
               <img src="assets/median-salary.png" alt="Median salaries by Estonian county" loading="lazy">
             </a>
             <div>
               <h3>Median Salary by County</h3>
               <p>Median salary comparison and quarterly trends by Estonian county.</p>
-              <a class="project-link" href="assets/median-salary.png" target="_blank" rel="noreferrer">Open image</a>
+              <a class="project-link" href="assets/median-salary.png" target="_blank" rel="noreferrer" data-lightbox-title="Median Salary by County" data-lightbox-alt="Median salaries by Estonian county">View full size</a>
             </div>
           </article>
         </div>
@@ -157,5 +158,20 @@
       <p>English, Estonian, Russian, Ukrainian, Czech</p>
     </div>
   </footer>
+
+  <dialog class="image-lightbox" id="imageLightbox" aria-labelledby="imageLightboxTitle">
+    <div class="image-lightbox-panel">
+      <div class="image-lightbox-toolbar">
+        <h2 id="imageLightboxTitle"></h2>
+        <div class="image-lightbox-actions">
+          <a id="imageLightboxOriginal" href="#" target="_blank" rel="noreferrer">Open original</a>
+          <button id="imageLightboxClose" type="button" aria-label="Close full-size image">&times;</button>
+        </div>
+      </div>
+      <div class="image-lightbox-stage">
+        <img id="imageLightboxImage" src="" alt="">
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>

@@ -13,8 +13,8 @@ Static portfolio for web applications, machine-learning work, analytical case st
 
 ### Analytical case studies
 
-- [Olist Delivery Reliability](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-case-study.pdf) — an operational analysis of delivery delay patterns and service reliability.
-- [E-commerce Funnel Analysis](https://sintagmatarches.github.io/portfolio/assets/case-study-1-ecommerce-funnel.pdf) — an event-level conversion analysis based on theLook dataset, BigQuery, and Power BI.
+- [Olist Delivery Reliability and Customer Reviews](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf) — an analysis of late-delivery routes, customer reviews, and where delays accumulate.
+- [Estonia County Economic Livability](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf) — a comparison of income, housing affordability, and labour-market conditions across 15 counties.
 
 ### Visualizations
 

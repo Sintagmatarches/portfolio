@@ -1,0 +1,7 @@
+{
+  "name": "sintagmatarches-portfolio",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/portfolio.test.mjs"
+  }
+}

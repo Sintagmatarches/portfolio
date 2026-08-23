@@ -1,47 +1,33 @@
 # Project Portfolio
 
-![Portfolio projects overview](docs/screenshots/portfolio-overview-v20260803.png?v=20260803)
+Static portfolio for evidence-backed data, BI, machine-learning and applied-AI work.
 
-Static portfolio for web applications, machine-learning work, analytical case studies, and data visualizations.
+[Open the live portfolio](https://sintagmatarches.github.io/portfolio/)
 
-[Open the live site](https://sintagmatarches.github.io/portfolio/)
+## Flagship projects
 
-## Selected work
+| Project | Evidence | Public result |
+| --- | --- | --- |
+| [EU Tender Intelligence Agent](https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent) | Official TED ingestion, lot-level deterministic qualification, version intelligence, local hybrid RAG/tool calling, grounding and adversarial tests | [Live Tender dashboard](https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent) |
+| [Finland Rail Monitoring System](https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system) | Live Digitraffic monitoring, geospatial analytics and an executable PySpark/Delta Bronze–Silver–Gold pipeline | [Live Rail monitor](https://applied-ai-lab.smjlw.chatgpt.site/finland-rail-reliability-monitor) |
+| [Olist Delivery Delay Predictor](https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor) | Leakage-safe chronological ML evaluation and server inference with Python/TypeScript parity | [Live predictor](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor) |
 
-### Web applications
-
-- [Applied AI Lab](https://applied-ai-lab.smjlw.chatgpt.site/) — an interactive machine-learning site with a working Olist delivery-delay risk predictor. [Source code](https://github.com/Sintagmatarches/applied-ai-lab).
-- [European Songbook](https://european-songbook-portfolio.pages.dev/) — a public demo of a multilingual historical-song catalog with search, filters, map navigation, and isolated administration simulations. [Source code](https://github.com/Sintagmatarches/european-songbook-showcase).
-
-### Analytical case studies
-
-- [Olist Delivery Reliability and Customer Reviews](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf) — an analysis of late-delivery routes, customer reviews, and where delays accumulate.
-- [Estonia County Economic Livability](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf) — a comparison of income, housing affordability, and labour-market conditions across 15 counties.
-
-### Visualizations
-
-- Estonian district-heating price comparison by county.
-- Estonian median salary comparison and quarterly trends by county.
-
-## Key decisions
-
-- **Metric:** I use decision-relevant measures instead of headline accuracy. For the imbalanced delivery-risk problem, PR-AUC and late-order capture in the top-risk 10% show whether the ranking can support a review queue; the analytical reports use transparent rates and comparable indicators that readers can trace back to source data.
-- **Model:** I selected logistic regression after comparing it with XGBoost and CatBoost across sequential backtests. It produced the strongest stability-adjusted PR-AUC and remains explainable and portable enough for server-side inference.
-- **Time split:** I kept model selection, calibration, and the newest final test in chronological order. This matches the real task of predicting future orders and avoids the optimistic leakage that a random split would introduce.
-- **Architecture:** I kept the portfolio as framework-free HTML, CSS, and JavaScript for a fast, low-maintenance GitHub Pages deployment, while the trained model runs behind a separate server-side API so model logic and validation are not delegated to the browser.
+The deployed Olist baseline is documented against the 14,471-order final benchmark: **6.32% PR-AUC**, **63.44% ROC-AUC**, and **107 of 620** late orders found in the highest-risk 10%. The modest result is presented as relative ranking evidence rather than a calibrated probability claim.
 
 ## Implementation
 
-The site uses semantic HTML, CSS, and JavaScript without a frontend framework. Project cards are grouped by work type, and one-page reports and charts open in a full-size viewer.
+The site deliberately remains framework-free HTML, CSS and JavaScript. GitHub Pages deploys `main`; the Applied AI Lab owns the model and data-product runtimes.
 
-## Repository structure
+Run the deterministic validation suite with:
 
-- `index.html` — content and page structure;
-- `styles.css` — responsive layout and visual design;
-- `script.js` — filtering and full-size media viewing;
-- `assets/` — project previews, reports, and visualizations;
-- `docs/screenshots/` — versioned production screenshots used in repository documentation.
+```bash
+npm test
+```
 
-## Validation
+The checks cover required live/source links, local asset integrity, current benchmark claims, core accessibility invariants and cache-versioning.
 
-Open `index.html` locally or use any static file server. Production is deployed from `main` through GitHub Pages.
+## Additional work
+
+- [European Historical Songbook](https://european-songbook-portfolio.pages.dev/) — multilingual catalog search and map navigation.
+- [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf) — SQL / Power BI case study.
+- [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf) — county-level affordability and labour-market analysis.

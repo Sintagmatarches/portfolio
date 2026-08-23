@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sviatoslav Baryshpol — Data Analyst portfolio." />
-  <title>Sviatoslav Baryshpol | Data Analyst</title>
+  <meta name="description" content="Sviatoslav Baryshpol — data, BI, machine learning and applied AI portfolio." />
+  <title>Sviatoslav Baryshpol | Data, BI, ML &amp; Applied AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260730-visualization-lightbox-v1" />
-  <script src="script.js?v=20260730-visualization-lightbox-v1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260823-current-projects-v1" />
+  <script src="script.js?v=20260823-current-projects-v1" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-content">
       <div class="identity">
-        <a class="logo" href="#projects">Sviatoslav Baryshpol</a>
-        <span>Data Analyst</span>
+        <a class="logo" href="#top">Sviatoslav Baryshpol</a>
+        <span>Data · BI · ML · Applied AI</span>
       </div>
       <nav class="navigation" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
@@ -26,63 +26,136 @@
     </div>
   </header>
 
-  <main>
+  <main id="top">
+    <section class="intro-section" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">Evidence-backed portfolio</p>
+          <h1 id="intro-title">Data products built from source to decision.</h1>
+        </div>
+        <div class="intro-copy">
+          <p>I build reproducible analytics, machine-learning and applied-AI projects with working interfaces, explicit definitions and honest evaluation.</p>
+          <p class="technology-line">Python · SQL · Power BI / DAX · PySpark / Delta Lake · ML · RAG / agents · Docker · CI/CD · Terraform</p>
+        </div>
+      </div>
+    </section>
+
     <section id="projects" class="section projects-section">
       <div class="container">
-        <h1>Projects</h1>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Three production-like systems</h2>
+          </div>
+          <p>Each project links to a working result and the evidence behind it.</p>
+        </div>
 
-        <div class="project-group">
+        <div class="flagship-grid">
+          <article class="flagship-card">
+            <div class="flagship-heading">
+              <p class="project-status">Applied AI · Procurement</p>
+              <span aria-label="Completed project">01</span>
+            </div>
+            <h3>EU Tender Intelligence Agent</h3>
+            <p class="project-summary">Turns official TED notices and lots into traceable supplier qualification, change intelligence and grounded answers.</p>
+            <ul class="evidence-list">
+              <li>Live anonymous TED Search API v3 discovery and structured lot processing</li>
+              <li>Deterministic bid / no-bid checks with evidence-linked decisions</li>
+              <li>Local hybrid RAG, embeddings and tool-calling agent with a claim/evidence gate</li>
+              <li>Adversarial regression coverage, observability, Docker and Azure deployment IaC</li>
+            </ul>
+            <p class="scope-note">The public app runs live search and deterministic assessment; persistent RAG and agent execution are reproducible locally. Azure infrastructure is prepared, not claimed as deployed.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent" target="_blank" rel="noreferrer">Live</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent" target="_blank" rel="noreferrer">Source</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/tender-ai-evaluation.md" target="_blank" rel="noreferrer">Evaluation</a>
+            </div>
+          </article>
+
+          <article class="flagship-card">
+            <div class="flagship-heading">
+              <p class="project-status">Data engineering · BI</p>
+              <span aria-label="Completed project">02</span>
+            </div>
+            <h3>Finland Rail Monitoring System</h3>
+            <p class="project-summary">A live and historical operating view built from official Finnish rail data, with reproducible analytical definitions.</p>
+            <dl class="metric-row" aria-label="Rail project evidence">
+              <div><dt>Journeys</dt><dd>403,054</dd></div>
+              <div><dt>Within 5 min</dt><dd>95.81%</dd></div>
+              <div><dt>Coverage</dt><dd>12 months</dd></div>
+            </dl>
+            <ul class="evidence-list">
+              <li>Digitraffic ingestion, live monitoring and maakunta-level geospatial analytics</li>
+              <li>Executable PySpark / Delta Bronze, Silver and Gold pipeline</li>
+              <li>Incremental watermarks, idempotent reruns, recovery and blocking quality gates</li>
+              <li>Power BI / DAX semantic model and Fabric delivery preparation</li>
+            </ul>
+            <p class="scope-note">The lakehouse runs locally and in CI. Fabric workspace publication is documented as a manual credentialed step, not a completed cloud deployment.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://applied-ai-lab.smjlw.chatgpt.site/finland-rail-reliability-monitor" target="_blank" rel="noreferrer">Live</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system" target="_blank" rel="noreferrer">Source</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/rail/data-platform.md" target="_blank" rel="noreferrer">Architecture</a>
+            </div>
+          </article>
+
+          <article class="flagship-card">
+            <div class="flagship-heading">
+              <p class="project-status">Machine learning · Operations</p>
+              <span aria-label="Completed project">03</span>
+            </div>
+            <h3>Olist Delivery Delay Predictor</h3>
+            <p class="project-summary">A server-side relative risk scorer developed with point-in-time features and chronological evaluation on Brazilian e-commerce orders.</p>
+            <dl class="metric-row" aria-label="Olist final benchmark">
+              <div><dt>PR-AUC</dt><dd>6.32%</dd></div>
+              <div><dt>ROC-AUC</dt><dd>63.44%</dd></div>
+              <div><dt>Top 10%</dt><dd>107 / 620</dd></div>
+            </dl>
+            <ul class="evidence-list">
+              <li>96,470 delivered orders with a held-out 14,471-order final benchmark</li>
+              <li>Leakage-safe historical features and sequential model selection</li>
+              <li>Logistic regression retained after comparison with XGBoost, CatBoost and blends</li>
+              <li>Portable TypeScript inference checked against the Python reference</li>
+            </ul>
+            <p class="scope-note">Predictive quality is modest: the highest-risk 10% found 107 of 620 late orders at 7.4% precision. The interface presents the score as relative risk, not a calibrated probability.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor" target="_blank" rel="noreferrer">Live</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor" target="_blank" rel="noreferrer">Source</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab/blob/main/artifacts/model-card.md" target="_blank" rel="noreferrer">Model card</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-group secondary-work">
           <div class="subsection-heading project-type-heading">
-            <h2>Web Projects</h2>
-            <span>Interactive applications</span>
+            <h2>Additional work</h2>
+            <span>Analysis and information systems</span>
           </div>
 
-          <div class="project-grid web-project-grid">
-            <article class="project-card web-project-card">
-              <a class="project-image" href="https://applied-ai-lab.smjlw.chatgpt.site/" target="_blank" rel="noreferrer" aria-label="Open Applied AI Lab">
-                <img src="assets/applied-ai-lab-preview.png" alt="Applied AI Lab Olist Delivery Delay Predictor" loading="eager">
-              </a>
-              <div class="project-content">
-                <p class="project-tools">Machine Learning / Prediction / Cloudflare</p>
-                <h2>Applied AI Lab</h2>
-                <p>Interactive machine-learning tools, including an Olist delivery-delay predictor.</p>
-                <div class="project-actions">
-                  <a class="project-link" href="https://applied-ai-lab.smjlw.chatgpt.site/" target="_blank" rel="noreferrer">Open lab</a>
-                  <a class="project-link project-link-secondary" href="https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor" target="_blank" rel="noreferrer">Try Olist predictor</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card web-project-card">
+          <div class="project-grid">
+            <article class="project-card">
               <a class="project-image" href="https://european-songbook-portfolio.pages.dev/" target="_blank" rel="noreferrer" aria-label="Open European Historical Songbook">
                 <img src="assets/songbook-preview.png" alt="European Historical Songbook catalog interface" loading="lazy">
               </a>
               <div class="project-content">
                 <p class="project-tools">Search / Metadata / Cloudflare</p>
-                <h2>European Historical Songbook</h2>
-                <p>Searchable multilingual catalog of historical songs.</p>
-                <a class="project-link" href="https://european-songbook-portfolio.pages.dev/" target="_blank" rel="noreferrer">Open project</a>
+                <h3>European Historical Songbook</h3>
+                <p>Searchable multilingual catalog of historical songs with filters and map navigation.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://european-songbook-portfolio.pages.dev/" target="_blank" rel="noreferrer">Live</a>
+                  <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/european-songbook-showcase" target="_blank" rel="noreferrer">Source</a>
+                </div>
               </div>
             </article>
-          </div>
-        </div>
 
-        <div class="project-group">
-          <div class="subsection-heading project-type-heading">
-            <h2>Case Studies</h2>
-            <span>Data analysis</span>
-          </div>
-
-          <div class="project-grid case-study-grid">
             <article class="project-card">
-              <a class="project-image pdf-preview" href="assets/olist-delivery-reliability-v2.pdf" target="_blank" rel="noreferrer" aria-label="Open Olist Delivery Reliability and Customer Reviews case study">
-                <img src="assets/olist-delivery-reliability-v2-preview.png" alt="First page of the Olist Delivery Reliability and Customer Reviews case study" loading="lazy">
+              <a class="project-image pdf-preview" href="assets/olist-delivery-reliability-v2.pdf" target="_blank" rel="noreferrer" aria-label="Open Olist Delivery Reliability and Customer Reviews report">
+                <img src="assets/olist-delivery-reliability-v2-preview.png" alt="First page of the Olist Delivery Reliability and Customer Reviews report" loading="lazy">
               </a>
               <div class="project-content">
                 <p class="project-tools">SQL / Power BI</p>
-                <h2>Olist Delivery Reliability and Customer Reviews</h2>
-                <p>Analysis of late-delivery routes, customer reviews, and where delays accumulate.</p>
-                <a class="project-link" href="assets/olist-delivery-reliability-v2.pdf" target="_blank" rel="noreferrer">Read more</a>
+                <h3>Olist Delivery Reliability</h3>
+                <p>Case study of late-delivery routes, customer reviews and where delays accumulate.</p>
+                <a class="project-link" href="assets/olist-delivery-reliability-v2.pdf" target="_blank" rel="noreferrer">Report</a>
               </div>
             </article>
 
@@ -92,17 +165,17 @@
               </a>
               <div class="project-content">
                 <p class="project-tools">Data analysis / Power BI</p>
-                <h2>Estonia County Economic Livability</h2>
-                <p>Comparison of income, housing affordability, and labour-market conditions across 15 counties.</p>
-                <a class="project-link" href="assets/estonia-county-economic-livability-v1.pdf" target="_blank" rel="noreferrer">Read more</a>
+                <h3>Estonia County Economic Livability</h3>
+                <p>Income, housing affordability and labour-market comparison across all 15 counties.</p>
+                <a class="project-link" href="assets/estonia-county-economic-livability-v1.pdf" target="_blank" rel="noreferrer">Report</a>
               </div>
             </article>
           </div>
         </div>
 
         <div class="subsection-heading project-type-heading">
-          <h2>Visualizations</h2>
-          <span>Dashboards and charts</span>
+          <h2>Selected visualizations</h2>
+          <span>Open at full size</span>
         </div>
 
         <div class="visualization-grid">
@@ -134,7 +207,7 @@
     <section id="about" class="info-section">
       <div class="container info-row">
         <h2>About</h2>
-        <p>University of Tartu graduate with a BSc in Information Technology Systems Development.</p>
+        <p>University of Tartu graduate with a BSc in Information Technology Systems Development, based in Lahti, Finland.</p>
       </div>
     </section>
 
@@ -142,10 +215,10 @@
       <div class="container info-row">
         <div>
           <h2>Contact</h2>
-          <p>Lahti, Finland</p>
+          <p>Open to data, BI, analytics engineering, ML and applied-AI opportunities.</p>
         </div>
         <div class="contact-links">
-          <span class="contact-email">svyatoslav.baryshpol@gmail.com</span>
+          <a href="mailto:svyatoslav.baryshpol@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/sviatoslav-baryshpol/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/Sintagmatarches" target="_blank" rel="noreferrer">GitHub</a>
         </div>
@@ -155,7 +228,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>English, Estonian, Russian, Ukrainian, Czech</p>
+      <p>English · Estonian · Russian · Ukrainian · Czech</p>
     </div>
   </footer>
 

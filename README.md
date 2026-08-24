@@ -8,7 +8,7 @@ Static portfolio for evidence-backed data, BI, machine-learning and applied-AI w
 
 | Project | Evidence | Public result |
 | --- | --- | --- |
-| [EU Tender Intelligence Agent](https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent) | Official TED ingestion, lot-level deterministic qualification, version intelligence, local hybrid RAG/tool calling, grounding and adversarial tests | [Live Tender dashboard](https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent) |
+| [EU Tender Intelligence Agent](https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent) | Official TED ingestion, lot-level qualification, a versioned 15-notice/30-query recorded-real corpus, holdout retrieval evaluation, CI eval gates and privacy-safe agent tracing | [Live Tender dashboard](https://applied-ai-lab.smjlw.chatgpt.site/eu-tender-intelligence-agent) |
 | [Finland Rail Monitoring System](https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system) | Live Digitraffic monitoring, geospatial analytics and an executable PySpark/Delta Bronze–Silver–Gold pipeline | [Live Rail monitor](https://applied-ai-lab.smjlw.chatgpt.site/finland-rail-reliability-monitor) |
 | [Olist Delivery Delay Predictor](https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor) | Leakage-safe chronological ML evaluation and server inference with Python/TypeScript parity | [Live predictor](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor) |
 

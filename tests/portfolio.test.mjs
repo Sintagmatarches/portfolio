@@ -35,6 +35,8 @@ test("surfaces the three current flagship projects and their direct routes", () 
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor"));
+  assert.match(html, /15 recorded real TED notices and 30 curated retrieval scenarios/);
+  assert.match(html, /source-derived portfolio evidence—not general AI accuracy/);
 });
 
 test("uses the approved current Olist benchmark and rejects known stale values", () => {
@@ -71,6 +73,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260823-current-projects-v1/);
-  assert.match(html, /script\.js\?v=20260823-current-projects-v1/);
+  assert.match(html, /styles\.css\?v=20260824-tender-evals-v2-1/);
+  assert.match(html, /script\.js\?v=20260824-tender-evals-v2-1/);
 });

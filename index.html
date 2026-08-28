@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260824-tender-evals-v2-1" />
-  <script src="script.js?v=20260824-tender-evals-v2-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260828-geospatial-ai-v1" />
+  <script src="script.js?v=20260828-geospatial-ai-v1" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -35,7 +35,7 @@
         </div>
         <div class="intro-copy">
           <p>I build reproducible analytics, machine-learning and applied-AI projects with working interfaces, explicit definitions and honest evaluation.</p>
-          <p class="technology-line">Python · SQL · Power BI / DAX · PySpark / Delta Lake · ML · RAG / agents · Docker · CI/CD · Terraform</p>
+          <p class="technology-line">Python · SQL · Power BI / DAX · PyTorch · Computer vision · Geospatial ML · PySpark / Delta Lake · RAG / agents · Docker · CI/CD</p>
         </div>
       </div>
     </section>
@@ -45,7 +45,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2>Three production-like systems</h2>
+            <h2>Four production-like systems</h2>
           </div>
           <p>Each project links to a working result and the evidence behind it.</p>
         </div>
@@ -121,6 +121,32 @@
               <a class="project-link" href="https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor" target="_blank" rel="noreferrer">Live</a>
               <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor" target="_blank" rel="noreferrer">Source</a>
               <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab/blob/main/artifacts/model-card.md" target="_blank" rel="noreferrer">Model card</a>
+            </div>
+          </article>
+
+          <article class="flagship-card">
+            <div class="flagship-heading">
+              <p class="project-status">Deep learning · Geospatial AI</p>
+              <span aria-label="Completed project">04</span>
+            </div>
+            <h3>Finland Geospatial AI</h3>
+            <p class="project-summary">Semantic segmentation of real Finnish Sentinel-2 imagery with PyTorch, spatial holdouts and georeferenced inference.</p>
+            <dl class="metric-row" aria-label="Finland Geospatial AI held-out Oulu test">
+              <div><dt>mIoU</dt><dd>0.3982</dd></div>
+              <div><dt>Macro Dice</dt><dd>0.4743</dd></div>
+              <div><dt>Test patches</dt><dd>315</dd></div>
+            </dl>
+            <ul class="evidence-list">
+              <li>850 real Sentinel-2 / WorldCover patches aligned in EPSG:3067 at 10 m</li>
+              <li>Helsinki + Lahti training, Tampere validation and a once-evaluated Oulu test</li>
+              <li>Compact U-Net and TinyDeepLab models trained with explicit PyTorch loops and real MLflow runs</li>
+              <li>Deterministic error visuals, ECE / risk-coverage analysis and CPU GeoTIFF inference</li>
+            </ul>
+            <p class="scope-note">Water and forest transfer strongly, while rare classes do not. Validation-fit temperature scaling worsened Oulu ECE, so the project reports the negative result instead of claiming calibrated probabilities.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/Sintagmatarches/finland-geospatial-ai" target="_blank" rel="noreferrer">Source</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/experiment-report.md" target="_blank" rel="noreferrer">Experiment report</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/model-card.md" target="_blank" rel="noreferrer">Model card</a>
             </div>
           </article>
         </div>

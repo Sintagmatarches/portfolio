@@ -20,13 +20,17 @@ const flagshipProjects = [
     title: "Olist Delivery Delay Predictor",
     route: "https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor",
   },
+  {
+    title: "Finland Geospatial AI",
+    route: "https://github.com/Sintagmatarches/finland-geospatial-ai",
+  },
 ];
 
 function valuesFor(attribute) {
   return [...html.matchAll(new RegExp(`${attribute}="([^"]+)"`, "g"))].map((match) => match[1]);
 }
 
-test("surfaces the three current flagship projects and their direct routes", () => {
+test("surfaces the four current flagship projects and their direct routes", () => {
   for (const project of flagshipProjects) {
     assert.match(html, new RegExp(project.title));
     assert.ok(valuesFor("href").includes(project.route), `Missing direct live route for ${project.title}`);
@@ -35,8 +39,13 @@ test("surfaces the three current flagship projects and their direct routes", () 
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/experiment-report.md"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/model-card.md"));
   assert.match(html, /15 recorded real TED notices and 30 curated retrieval scenarios/);
   assert.match(html, /source-derived portfolio evidence—not general AI accuracy/);
+  assert.match(html, /mIoU<\/dt><dd>0\.3982/);
+  assert.match(html, /Macro Dice<\/dt><dd>0\.4743/);
+  assert.match(html, /temperature scaling worsened Oulu ECE/i);
 });
 
 test("uses the approved current Olist benchmark and rejects known stale values", () => {
@@ -73,6 +82,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260824-tender-evals-v2-1/);
-  assert.match(html, /script\.js\?v=20260824-tender-evals-v2-1/);
+  assert.match(html, /styles\.css\?v=20260828-geospatial-ai-v1/);
+  assert.match(html, /script\.js\?v=20260828-geospatial-ai-v1/);
 });

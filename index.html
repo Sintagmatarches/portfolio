@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260828-geospatial-ai-v1" />
-  <script src="script.js?v=20260828-geospatial-ai-v1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260830-helsinki-water-v1" />
+  <script src="script.js?v=20260830-helsinki-water-v1" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -35,7 +35,7 @@
         </div>
         <div class="intro-copy">
           <p>I build reproducible analytics, machine-learning and applied-AI projects with working interfaces, explicit definitions and honest evaluation.</p>
-          <p class="technology-line">Python · SQL · Power BI / DAX · PyTorch · Computer vision · Geospatial ML · PySpark / Delta Lake · RAG / agents · Docker · CI/CD</p>
+          <p class="technology-line">Python · SQL · Power BI / DAX · Time-series · OR-Tools · PyTorch · Geospatial ML · PySpark / Delta Lake · RAG / agents · Docker · CI/CD</p>
         </div>
       </div>
     </section>
@@ -45,7 +45,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2>Four production-like systems</h2>
+            <h2>Five production-like systems</h2>
           </div>
           <p>Each project links to a working result and the evidence behind it.</p>
         </div>
@@ -147,6 +147,32 @@
               <a class="project-link" href="https://github.com/Sintagmatarches/finland-geospatial-ai" target="_blank" rel="noreferrer">Source</a>
               <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/experiment-report.md" target="_blank" rel="noreferrer">Experiment report</a>
               <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/model-card.md" target="_blank" rel="noreferrer">Model card</a>
+            </div>
+          </article>
+
+          <article class="flagship-card">
+            <div class="flagship-heading">
+              <p class="project-status">Decision science · Water</p>
+              <span aria-label="Completed project">05</span>
+            </div>
+            <h3>Helsinki Water — Forecasting + Optimization</h3>
+            <p class="project-summary">A reproducible monthly forecasting and inspection-triage study built from real City of Helsinki public-property water meters.</p>
+            <dl class="metric-row" aria-label="Helsinki Water sealed 2018 evidence">
+              <div><dt>ETS MASE</dt><dd>0.812</dd></div>
+              <div><dt>90% coverage</dt><dd>98.96%</dd></div>
+              <div><dt>Signals</dt><dd>3</dd></div>
+            </dl>
+            <ul class="evidence-list">
+              <li>864 official Nuuka observations: eight properties × 108 complete months</li>
+              <li>Seven-origin expanding backtests, sealed 2018 and four forecasting approaches</li>
+              <li>Conformal intervals, honest statistical anomaly semantics and failure analysis</li>
+              <li>OR-Tools CP-SAT inspection allocation with cost, budget and uncertainty sensitivity</li>
+            </ul>
+            <p class="scope-note">The 90% intervals were over-conservative, SARIMA beat the development-selected ETS ex post on property MASE, and base optimization gain was 0%. Signals are not labelled as confirmed leaks.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization" target="_blank" rel="noreferrer">Source</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/blob/main/reports/scientific-report.md" target="_blank" rel="noreferrer">Scientific report</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/blob/main/artifacts/v1.0.0/metrics.json" target="_blank" rel="noreferrer">Metrics</a>
             </div>
           </article>
         </div>

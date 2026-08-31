@@ -50,10 +50,10 @@ test("surfaces the five current flagship projects and their direct routes", () =
   assert.match(html, /mIoU<\/dt><dd>0\.3982/);
   assert.match(html, /Macro Dice<\/dt><dd>0\.4743/);
   assert.match(html, /temperature scaling worsened Oulu ECE/i);
-  assert.match(html, /ETS MASE<\/dt><dd>0\.812/);
-  assert.match(html, /90% coverage<\/dt><dd>98\.96%/);
+  assert.match(html, /ETS MASE<\/dt><dd>0\.793/);
+  assert.match(html, /90% coverage<\/dt><dd>97\.92%/);
   assert.match(html, /base optimization gain was 0%/i);
-  assert.match(html, /binding six-hour budget produced 7\.67%/i);
+  assert.match(html, /binding eight-hour budget produced 14\.59%/i);
   assert.match(html, /Signals are not labelled as confirmed leaks/i);
 });
 
@@ -91,6 +91,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260831-helsinki-water-v2/);
-  assert.match(html, /script\.js\?v=20260831-helsinki-water-v2/);
+  assert.match(html, /styles\.css\?v=20260831-helsinki-water-v3/);
+  assert.match(html, /script\.js\?v=20260831-helsinki-water-v3/);
 });

@@ -18,7 +18,7 @@ The deployed Olist baseline is documented against the 14,471-order final benchma
 
 Finland Geospatial AI reports **0.3982 held-out Oulu mIoU** and **0.4743 macro Dice** across six classes. Temperature scaling worsened geographic calibration and is documented as a negative result rather than an improvement.
 
-Helsinki Water reports development-selected ETS at **0.812 MASE** on the sealed 2018 property panel and **98.96% coverage** for nominal 90% intervals. It preserves two important negative results: SARIMA performed better ex post on property MASE, while the base optimized policy improved 0% because all three candidates fit the resource budget.
+Helsinki Water reports development-selected ETS at **0.812 MASE** on the sealed 2018 property panel and **98.96% coverage** for nominal 90% intervals. It preserves two important negative results: SARIMA performed better ex post on property MASE, while the base optimized policy improved 0% because all three candidates fit the resource budget; a binding six-hour scenario produced a 7.67% gain.
 
 ## Implementation
 

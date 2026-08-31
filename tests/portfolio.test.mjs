@@ -53,6 +53,7 @@ test("surfaces the five current flagship projects and their direct routes", () =
   assert.match(html, /ETS MASE<\/dt><dd>0\.812/);
   assert.match(html, /90% coverage<\/dt><dd>98\.96%/);
   assert.match(html, /base optimization gain was 0%/i);
+  assert.match(html, /binding six-hour budget produced 7\.67%/i);
   assert.match(html, /Signals are not labelled as confirmed leaks/i);
 });
 
@@ -90,6 +91,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260830-helsinki-water-v1/);
-  assert.match(html, /script\.js\?v=20260830-helsinki-water-v1/);
+  assert.match(html, /styles\.css\?v=20260831-helsinki-water-v2/);
+  assert.match(html, /script\.js\?v=20260831-helsinki-water-v2/);
 });

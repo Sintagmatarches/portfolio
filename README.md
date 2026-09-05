@@ -32,6 +32,10 @@ npm test
 
 The checks cover required live/source links, local asset integrity, current benchmark claims, core accessibility invariants and cache-versioning.
 
+`npm run verify:evidence` separately fetches current public evidence from the Water, Geospatial and Olist repositories and the GitHub profile. It checks seven source-derived headline values against the matching project cards, profile sections and this README. It requires network access and fails on unavailable evidence or drift; it does not replace the offline tests or validate every narrative claim.
+
+The gallery's Helsinki Water benchmark is regenerated with that repository's `python -m helsinki_water.cli report` command from versioned `artifacts/v1.0.0/metrics.json`, then copied to `assets/water-forecast-benchmark.png`. It preserves both development selection and the sealed holdout comparison. Keep the source figure and its portfolio copy identical when updating evidence.
+
 ## Additional work
 
 - [European Historical Songbook](https://european-songbook-portfolio.pages.dev/) — multilingual catalog search and map navigation.

@@ -13,7 +13,13 @@ if (
 ) {
   document.querySelectorAll('[data-lightbox-title]').forEach((link) => {
     link.addEventListener('click', (event) => {
-      if (!(link instanceof HTMLAnchorElement) || typeof lightbox.showModal !== 'function') {
+      if (
+        !(link instanceof HTMLAnchorElement)
+        || typeof lightbox.showModal !== 'function'
+        || event.defaultPrevented
+        || event.button !== 0
+        || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey
+      ) {
         return;
       }
 

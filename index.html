@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260831-helsinki-water-v3" />
-  <script src="script.js?v=20260831-helsinki-water-v3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260905-portfolio-quality-v1" />
+  <script src="script.js?v=20260905-portfolio-quality-v1" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
   <header class="site-header">
     <div class="container header-content">
       <div class="identity">
@@ -26,7 +27,7 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1">
     <section class="intro-section" aria-labelledby="intro-title">
       <div class="container intro-grid">
         <div>
@@ -45,7 +46,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2>Five production-like systems</h2>
+            <h2>Five evidence-backed projects</h2>
           </div>
           <p>Each project links to a working result and the evidence behind it.</p>
         </div>
@@ -90,7 +91,7 @@
               <li>Incremental watermarks, idempotent reruns, recovery and blocking quality gates</li>
               <li>Power BI / DAX semantic model and Fabric delivery preparation</li>
             </ul>
-            <p class="scope-note">The lakehouse runs locally and in CI. Fabric workspace publication is documented as a manual credentialed step, not a completed cloud deployment.</p>
+            <p class="scope-note">Snapshot: 1 Aug 2025–31 Jul 2026. Punctuality covers 400,518 completed final arrivals. The lakehouse runs locally and in CI; Fabric workspace publication remains a manual credentialed step.</p>
             <div class="project-actions">
               <a class="project-link" href="https://applied-ai-lab.smjlw.chatgpt.site/finland-rail-reliability-monitor" target="_blank" rel="noreferrer">Live</a>
               <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system" target="_blank" rel="noreferrer">Source</a>
@@ -159,7 +160,7 @@
             <p class="project-summary">A reproducible monthly forecasting and inspection-triage study built from real City of Helsinki public-property water meters.</p>
             <dl class="metric-row" aria-label="Helsinki Water sealed 2018 evidence">
               <div><dt>ETS MASE</dt><dd>0.793</dd></div>
-              <div><dt>90% coverage</dt><dd>97.92%</dd></div>
+              <div><dt>Coverage (90% target)</dt><dd>97.92%</dd></div>
               <div><dt>Signals</dt><dd>3</dd></div>
             </dl>
             <ul class="evidence-list">
@@ -232,6 +233,16 @@
 
         <div class="visualization-grid">
           <article class="visualization-card">
+            <a class="visualization-image" href="assets/water-forecast-benchmark.png?v=20260905-portfolio-quality-v1" target="_blank" rel="noreferrer" aria-label="View Helsinki Water forecast benchmark full size" data-lightbox-title="Helsinki Water: development and sealed holdout" data-lightbox-alt="Development and sealed 2018 MASE for four forecasting models; ETS wins development, while SARIMA has lower holdout error.">
+              <img src="assets/water-forecast-benchmark.png?v=20260905-portfolio-quality-v1" alt="ETS wins development selection; SARIMA has lower sealed 2018 MASE. Lower MASE is better." loading="lazy">
+            </a>
+            <div>
+              <h3>Model selection versus future performance</h3>
+              <p>ETS was selected before the holdout. SARIMA did better on sealed 2018 property MASE; the selected model was retained.</p>
+              <a class="project-link" href="https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/blob/main/artifacts/v1.0.0/metrics.json" target="_blank" rel="noreferrer">Measured evidence</a>
+            </div>
+          </article>
+          <article class="visualization-card">
             <a class="visualization-image" href="assets/heat-price.png" target="_blank" rel="noreferrer" aria-label="View heating price visualization full size" data-lightbox-title="Heating Price by County" data-lightbox-alt="Average heating prices by Estonian county">
               <img src="assets/heat-price.png" alt="Average heating prices by Estonian county" loading="lazy">
             </a>
@@ -294,7 +305,7 @@
         </div>
       </div>
       <div class="image-lightbox-stage">
-        <img id="imageLightboxImage" src="" alt="">
+        <img id="imageLightboxImage" alt="">
       </div>
     </div>
   </dialog>

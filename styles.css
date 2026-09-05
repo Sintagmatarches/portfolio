@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -37,6 +38,25 @@ img {
 
 a {
   color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 14px;
+  z-index: 20;
+  padding: 10px 16px;
+  background: var(--surface);
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 h1,
@@ -69,6 +89,7 @@ p {
 
 .identity {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 12px;
 }
@@ -242,13 +263,10 @@ p {
 }
 
 .metric-row dt {
-  overflow: hidden;
   margin-bottom: 3px;
   color: var(--muted);
-  font-size: 0.62rem;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  white-space: nowrap;
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
 }
 
 .metric-row dd {
@@ -427,22 +445,18 @@ p {
 
 .visualization-card {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
 }
 
 .visualization-image {
-  border-right: 1px solid var(--border);
-  border-bottom: 0;
+  aspect-ratio: 16 / 9;
+  cursor: zoom-in;
 }
 
 .visualization-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.visualization-image {
-  cursor: zoom-in;
+  object-fit: contain;
 }
 
 .visualization-card > div {
@@ -692,10 +706,6 @@ p {
 
   .project-content > p:not(.project-tools) {
     min-height: auto;
-  }
-
-  .visualization-card {
-    grid-template-columns: 130px minmax(0, 1fr);
   }
 
   .info-row {

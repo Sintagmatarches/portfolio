@@ -18,8 +18,8 @@ The deployed Olist baseline is documented against the 14,471-order final benchma
 
 Finland Geospatial AI v2 reports **0.6652 mIoU** and **0.7742 macro Dice** on one hash-locked,
 96-patch test across two NLS map sheets. Water reached 0.9636 IoU and open-natural land 0.3300.
-The immutable Sentinel-2 / WorldCover v1 remains at **0.3982 mIoU** and **0.4743 macro Dice**; the
-sensor, resolution, label source, classes and regions differ, so the scores are not a direct benchmark.
+The older Sentinel-2 / WorldCover v1 is unchanged at **0.3982 mIoU** and **0.4743 macro Dice**. Its
+sensor, resolution, label source, classes and regions differ, so the scores cannot be compared directly.
 
 Helsinki Water reports development-selected ETS at **0.793 MASE** on the sealed 2018 property panel and **97.92% coverage** for nominal 90% intervals. It preserves two important negative results: SARIMA performed better ex post on property MASE, while the base optimized policy improved 0% because all three candidates fit the resource budget; a binding eight-hour scenario produced a 14.59% gain.
 

@@ -49,8 +49,8 @@ test("surfaces the five current flagship projects and their direct routes", () =
   assert.match(html, /source-derived portfolio evidence—not general AI accuracy/);
   assert.match(html, /mIoU<\/dt><dd>0\.6652/);
   assert.match(html, /Macro Dice<\/dt><dd>0\.7742/);
-  assert.match(html, /historical Sentinel-2 v1 remains immutable at 0\.3982 mIoU \/ 0\.4743 macro Dice/i);
-  assert.match(html, /scores.*non-equivalent/i);
+  assert.match(html, /older Sentinel-2 v1 is unchanged at 0\.3982 mIoU \/ 0\.4743 macro Dice/i);
+  assert.match(html, /scores cannot be compared directly/i);
   assert.match(html, /ETS MASE<\/dt><dd>0\.793/);
   assert.match(html, /Coverage \(90% target\)<\/dt><dd>97\.92%/);
   assert.match(html, /base optimization gain was 0%/i);
@@ -92,6 +92,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260906-nls-v2/);
-  assert.match(html, /script\.js\?v=20260906-nls-v2/);
+  assert.match(html, /styles\.css\?v=20260906-nls-v2-style/);
+  assert.match(html, /script\.js\?v=20260906-nls-v2-style/);
 });

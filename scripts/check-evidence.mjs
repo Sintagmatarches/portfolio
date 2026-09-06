@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 
 // Deliberately separate from offline tests: this checks current public main branches.
 const base = 'https://raw.githubusercontent.com/Sintagmatarches';
-const evidenceVersion = '20260906-nls-v2';
+const evidenceVersion = '20260906-nls-v2-style';
 async function source(repository, path) {
   const response = await fetch(`${base}/${repository}/main/${path}?v=${evidenceVersion}`, {
     signal: AbortSignal.timeout(20_000), cache: 'no-store',

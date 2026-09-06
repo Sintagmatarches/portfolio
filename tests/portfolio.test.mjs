@@ -43,13 +43,14 @@ test("surfaces the five current flagship projects and their direct routes", () =
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#eu-tender-intelligence-agent"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor"));
-  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/experiment-report.md"));
-  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/model-card.md"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/model-card.md"));
   assert.match(html, /15 recorded real TED notices and 30 curated retrieval scenarios/);
   assert.match(html, /source-derived portfolio evidence—not general AI accuracy/);
-  assert.match(html, /mIoU<\/dt><dd>0\.3982/);
-  assert.match(html, /Macro Dice<\/dt><dd>0\.4743/);
-  assert.match(html, /temperature scaling worsened Oulu ECE/i);
+  assert.match(html, /mIoU<\/dt><dd>0\.6652/);
+  assert.match(html, /Macro Dice<\/dt><dd>0\.7742/);
+  assert.match(html, /historical Sentinel-2 v1 remains immutable at 0\.3982 mIoU \/ 0\.4743 macro Dice/i);
+  assert.match(html, /scores.*non-equivalent/i);
   assert.match(html, /ETS MASE<\/dt><dd>0\.793/);
   assert.match(html, /Coverage \(90% target\)<\/dt><dd>97\.92%/);
   assert.match(html, /base optimization gain was 0%/i);
@@ -91,6 +92,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260905-portfolio-quality-v1/);
-  assert.match(html, /script\.js\?v=20260905-portfolio-quality-v1/);
+  assert.match(html, /styles\.css\?v=20260906-nls-v2/);
+  assert.match(html, /script\.js\?v=20260906-nls-v2/);
 });

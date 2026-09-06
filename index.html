@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260905-portfolio-quality-v1" />
-  <script src="script.js?v=20260905-portfolio-quality-v1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260906-nls-v2" />
+  <script src="script.js?v=20260906-nls-v2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#top">Skip to content</a>
@@ -131,23 +131,23 @@
               <span aria-label="Completed project">04</span>
             </div>
             <h3>Finland Geospatial AI</h3>
-            <p class="project-summary">Semantic segmentation of real Finnish Sentinel-2 imagery with PyTorch, spatial holdouts and georeferenced inference.</p>
-            <dl class="metric-row" aria-label="Finland Geospatial AI held-out Oulu test">
-              <div><dt>mIoU</dt><dd>0.3982</dd></div>
-              <div><dt>Macro Dice</dt><dd>0.4743</dd></div>
-              <div><dt>Test patches</dt><dd>315</dd></div>
+            <p class="project-summary">Native-resolution segmentation of official NLS Finland orthophotos with authoritative vector labels, spatial holdouts and georeferenced inference.</p>
+            <dl class="metric-row" aria-label="Finland Geospatial AI NLS v2 sealed test">
+              <div><dt>mIoU</dt><dd>0.6652</dd></div>
+              <div><dt>Macro Dice</dt><dd>0.7742</dd></div>
+              <div><dt>Test patches</dt><dd>96</dd></div>
             </dl>
             <ul class="evidence-list">
-              <li>850 real Sentinel-2 / WorldCover patches aligned in EPSG:3067 at 10 m</li>
-              <li>Helsinki + Lahti training, Tampere validation and a once-evaluated Oulu test</li>
-              <li>Compact U-Net and TinyDeepLab models trained with explicit PyTorch loops and real MLflow runs</li>
-              <li>Deterministic error visuals, ECE / risk-coverage analysis and CPU GeoTIFF inference</li>
+              <li>576 real 256 px patches from five NLS map sheets at native 0.5 m RGB resolution</li>
+              <li>Exact EPSG:3067 raster/vector alignment, 512 m split buffers and automated leakage checks</li>
+              <li>Two U-Nets and pretrained SegFormer-B0 tracked in MLflow; selection used validation only</li>
+              <li>Single hash-locked test, boundary/error visuals, ECE / risk coverage and CPU GeoTIFF inference</li>
             </ul>
-            <p class="scope-note">Water and forest transfer strongly, while rare classes do not. Validation-fit temperature scaling worsened Oulu ECE, so the project reports the negative result instead of claiming calibrated probabilities.</p>
+            <p class="scope-note">Water reached 0.9636 IoU, while open-natural land reached 0.3300. The historical Sentinel-2 v1 remains immutable at 0.3982 mIoU / 0.4743 macro Dice; its different sensor, labels, classes and regions make the scores non-equivalent.</p>
             <div class="project-actions">
               <a class="project-link" href="https://github.com/Sintagmatarches/finland-geospatial-ai" target="_blank" rel="noreferrer">Source</a>
-              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/experiment-report.md" target="_blank" rel="noreferrer">Experiment report</a>
-              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/model-card.md" target="_blank" rel="noreferrer">Model card</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md" target="_blank" rel="noreferrer">Experiment report</a>
+              <a class="project-link project-link-secondary" href="https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/model-card.md" target="_blank" rel="noreferrer">Model card</a>
             </div>
           </article>
 
@@ -233,8 +233,8 @@
 
         <div class="visualization-grid">
           <article class="visualization-card">
-            <a class="visualization-image" href="assets/water-forecast-benchmark.png?v=20260905-portfolio-quality-v1" target="_blank" rel="noreferrer" aria-label="View Helsinki Water forecast benchmark full size" data-lightbox-title="Helsinki Water: development and sealed holdout" data-lightbox-alt="Development and sealed 2018 MASE for four forecasting models; ETS wins development, while SARIMA has lower holdout error.">
-              <img src="assets/water-forecast-benchmark.png?v=20260905-portfolio-quality-v1" alt="ETS wins development selection; SARIMA has lower sealed 2018 MASE. Lower MASE is better." loading="lazy">
+            <a class="visualization-image" href="assets/water-forecast-benchmark.png?v=20260906-nls-v2" target="_blank" rel="noreferrer" aria-label="View Helsinki Water forecast benchmark full size" data-lightbox-title="Helsinki Water: development and sealed holdout" data-lightbox-alt="Development and sealed 2018 MASE for four forecasting models; ETS wins development, while SARIMA has lower holdout error.">
+              <img src="assets/water-forecast-benchmark.png?v=20260906-nls-v2" alt="ETS wins development selection; SARIMA has lower sealed 2018 MASE. Lower MASE is better." loading="lazy">
             </a>
             <div>
               <h3>Model selection versus future performance</h3>

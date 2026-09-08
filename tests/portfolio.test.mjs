@@ -6,6 +6,9 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = await readFile(path.join(root, "index.html"), "utf8");
+const certificateIndex = JSON.parse(
+  await readFile(path.join(root, "assets", "certificates", "index.json"), "utf8"),
+);
 
 const flagshipProjects = [
   {
@@ -65,6 +68,28 @@ test("uses the approved current Olist benchmark and rejects known stale values",
   assert.doesNotMatch(html, /9\.90%|72\.49%|170\s*(?:of|\/)\s*620/i);
 });
 
+test("publishes every certificate with a preview and original PDF", () => {
+  assert.equal(certificateIndex.count, 50);
+  assert.equal(certificateIndex.certificates.length, 50);
+  assert.equal((html.match(/class="certificate-card"/g) ?? []).length, 50);
+
+  const categories = new Set(certificateIndex.certificates.map((item) => item.category));
+  assert.deepEqual(categories, new Set([
+    "Learning paths",
+    "Python and pandas",
+    "Statistics and experimentation",
+    "Visualization and geospatial",
+    "Machine learning",
+    "SQL and databases",
+    "Excel",
+  ]));
+
+  for (const certificate of certificateIndex.certificates) {
+    assert.ok(html.includes(`assets/certificates/${certificate.pdf}`));
+    assert.ok(html.includes(`assets/certificates/${certificate.preview}`));
+  }
+});
+
 test("keeps local links and media references resolvable", async () => {
   const localTargets = [...new Set([...valuesFor("href"), ...valuesFor("src")])]
     .map((value) => value.split("?")[0].split("#")[0])
@@ -92,6 +117,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260906-nls-v2-style/);
-  assert.match(html, /script\.js\?v=20260906-nls-v2-style/);
+  assert.match(html, /styles\.css\?v=20260908-certificates/);
+  assert.match(html, /script\.js\?v=20260908-certificates/);
 });

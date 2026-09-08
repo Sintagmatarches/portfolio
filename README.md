@@ -41,6 +41,7 @@ The gallery's Helsinki Water benchmark is regenerated with that repository's `py
 
 ## Additional work
 
+- [Certificates](https://sintagmatarches.github.io/portfolio/#certificates) — 50 DataCamp certificates grouped by subject, with browser previews and original PDFs.
 - [European Historical Songbook](https://european-songbook-portfolio.pages.dev/) — multilingual catalog search and map navigation.
 - [Olist Delivery Reliability report](https://sintagmatarches.github.io/portfolio/assets/olist-delivery-reliability-v2.pdf) — SQL / Power BI case study.
 - [Estonia County Economic Livability report](https://sintagmatarches.github.io/portfolio/assets/estonia-county-economic-livability-v1.pdf) — county-level affordability and labour-market analysis.

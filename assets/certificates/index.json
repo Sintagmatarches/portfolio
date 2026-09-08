@@ -1,0 +1,506 @@
+{
+  "issuer": "DataCamp",
+  "count": 50,
+  "certificates": [
+    {
+      "source_file": "certificate52.pdf",
+      "title": "SQL Fundamentals",
+      "category": "Learning paths",
+      "completed": "2025-04-04",
+      "duration": "26 hours",
+      "certificate_id": "611491",
+      "pdf": "sql-fundamentals.pdf",
+      "preview": "previews/sql-fundamentals.webp"
+    },
+    {
+      "source_file": "certificate25.pdf",
+      "title": "Data Analyst in Python",
+      "category": "Learning paths",
+      "completed": "2025-05-04",
+      "duration": "36 hours",
+      "certificate_id": "626214",
+      "pdf": "data-analyst-in-python.pdf",
+      "preview": "previews/data-analyst-in-python.webp"
+    },
+    {
+      "source_file": "certificate24.pdf",
+      "title": "Associate Data Scientist in Python",
+      "category": "Learning paths",
+      "completed": "2026-04-12",
+      "duration": "90 hours",
+      "certificate_id": "829449",
+      "pdf": "associate-data-scientist-in-python.pdf",
+      "preview": "previews/associate-data-scientist-in-python.webp"
+    },
+    {
+      "source_file": "certificate49.pdf",
+      "title": "Statistics Fundamentals in Python",
+      "category": "Learning paths",
+      "completed": "2026-04-16",
+      "duration": "20 hours",
+      "certificate_id": "832036",
+      "pdf": "statistics-fundamentals-in-python.pdf",
+      "preview": "previews/statistics-fundamentals-in-python.webp"
+    },
+    {
+      "source_file": "certificate50.pdf",
+      "title": "Data Visualization in Python",
+      "category": "Learning paths",
+      "completed": "2026-04-17",
+      "duration": "16 hours",
+      "certificate_id": "832790",
+      "pdf": "data-visualization-in-python.pdf",
+      "preview": "previews/data-visualization-in-python.webp"
+    },
+    {
+      "source_file": "certificate47.pdf",
+      "title": "Python Data Fundamentals",
+      "category": "Learning paths",
+      "completed": "2026-04-17",
+      "duration": "28 hours",
+      "certificate_id": "832473",
+      "pdf": "python-data-fundamentals.pdf",
+      "preview": "previews/python-data-fundamentals.webp"
+    },
+    {
+      "source_file": "certificate48.pdf",
+      "title": "Data Manipulation in Python",
+      "category": "Learning paths",
+      "completed": "2026-04-26",
+      "duration": "16 hours",
+      "certificate_id": "837638",
+      "pdf": "data-manipulation-in-python.pdf",
+      "preview": "previews/data-manipulation-in-python.webp"
+    },
+    {
+      "source_file": "certificate51.pdf",
+      "title": "Importing & Cleaning Data in Python",
+      "category": "Learning paths",
+      "completed": "2026-04-26",
+      "duration": "13 hours",
+      "certificate_id": "837632",
+      "pdf": "importing-and-cleaning-data-in-python.pdf",
+      "preview": "previews/importing-and-cleaning-data-in-python.webp"
+    },
+    {
+      "source_file": "certificate21.pdf",
+      "title": "Introduction to Python",
+      "category": "Python and pandas",
+      "completed": "2024-09-02",
+      "duration": "4 hours",
+      "certificate_id": "35905878",
+      "pdf": "introduction-to-python.pdf",
+      "preview": "previews/introduction-to-python.webp"
+    },
+    {
+      "source_file": "certificate.pdf",
+      "title": "Intermediate Python",
+      "category": "Python and pandas",
+      "completed": "2024-09-08",
+      "duration": "4 hours",
+      "certificate_id": "35952234",
+      "pdf": "intermediate-python.pdf",
+      "preview": "previews/intermediate-python.webp"
+    },
+    {
+      "source_file": "certificate7.pdf",
+      "title": "Data Manipulation with pandas",
+      "category": "Python and pandas",
+      "completed": "2024-10-01",
+      "duration": "4 hours",
+      "certificate_id": "36153918",
+      "pdf": "data-manipulation-with-pandas.pdf",
+      "preview": "previews/data-manipulation-with-pandas.webp"
+    },
+    {
+      "source_file": "certificate8.pdf",
+      "title": "Joining Data with pandas",
+      "category": "Python and pandas",
+      "completed": "2024-10-29",
+      "duration": "4 hours",
+      "certificate_id": "36615964",
+      "pdf": "joining-data-with-pandas.pdf",
+      "preview": "previews/joining-data-with-pandas.webp"
+    },
+    {
+      "source_file": "certificate1.pdf",
+      "title": "Introduction to Functions in Python",
+      "category": "Python and pandas",
+      "completed": "2025-01-02",
+      "duration": "3 hours",
+      "certificate_id": "38033453",
+      "pdf": "introduction-to-functions-in-python.pdf",
+      "preview": "previews/introduction-to-functions-in-python.webp"
+    },
+    {
+      "source_file": "certificate3.pdf",
+      "title": "Python Toolbox",
+      "category": "Python and pandas",
+      "completed": "2025-01-14",
+      "duration": "4 hours",
+      "certificate_id": "38174577",
+      "pdf": "python-toolbox.pdf",
+      "preview": "previews/python-toolbox.webp"
+    },
+    {
+      "source_file": "certificate13.pdf",
+      "title": "Working with Categorical Data in Python",
+      "category": "Python and pandas",
+      "completed": "2026-03-19",
+      "duration": "4 hours",
+      "certificate_id": "39860963",
+      "pdf": "working-with-categorical-data-in-python.pdf",
+      "preview": "previews/working-with-categorical-data-in-python.webp"
+    },
+    {
+      "source_file": "certificate12.pdf",
+      "title": "Cleaning Data in Python",
+      "category": "Python and pandas",
+      "completed": "2026-03-22",
+      "duration": "4 hours",
+      "certificate_id": "46885517",
+      "pdf": "cleaning-data-in-python.pdf",
+      "preview": "previews/cleaning-data-in-python.webp"
+    },
+    {
+      "source_file": "certificate10.pdf",
+      "title": "Introduction to Importing Data in Python",
+      "category": "Python and pandas",
+      "completed": "2026-03-22",
+      "duration": "3 hours",
+      "certificate_id": "46851226",
+      "pdf": "introduction-to-importing-data-in-python.pdf",
+      "preview": "previews/introduction-to-importing-data-in-python.webp"
+    },
+    {
+      "source_file": "certificate22.pdf",
+      "title": "Writing Functions in Python",
+      "category": "Python and pandas",
+      "completed": "2026-03-26",
+      "duration": "4 hours",
+      "certificate_id": "46968157",
+      "pdf": "writing-functions-in-python.pdf",
+      "preview": "previews/writing-functions-in-python.webp"
+    },
+    {
+      "source_file": "certificate4.pdf",
+      "title": "Working with Dates and Times in Python",
+      "category": "Python and pandas",
+      "completed": "2026-04-10",
+      "duration": "4 hours",
+      "certificate_id": "46992068",
+      "pdf": "working-with-dates-and-times-in-python.pdf",
+      "preview": "previews/working-with-dates-and-times-in-python.webp"
+    },
+    {
+      "source_file": "certificate9.pdf",
+      "title": "Reshaping Data with pandas",
+      "category": "Python and pandas",
+      "completed": "2026-04-23",
+      "duration": "4 hours",
+      "certificate_id": "47396187",
+      "pdf": "reshaping-data-with-pandas.pdf",
+      "preview": "previews/reshaping-data-with-pandas.webp"
+    },
+    {
+      "source_file": "certificate11.pdf",
+      "title": "Intermediate Importing Data in Python",
+      "category": "Python and pandas",
+      "completed": "2026-04-26",
+      "duration": "2 hours",
+      "certificate_id": "47449196",
+      "pdf": "intermediate-importing-data-in-python.pdf",
+      "preview": "previews/intermediate-importing-data-in-python.webp"
+    },
+    {
+      "source_file": "certificate5.pdf",
+      "title": "Introduction to NumPy",
+      "category": "Python and pandas",
+      "completed": "2026-04-26",
+      "duration": "4 hours",
+      "certificate_id": "47449358",
+      "pdf": "introduction-to-numpy.pdf",
+      "preview": "previews/introduction-to-numpy.webp"
+    },
+    {
+      "source_file": "certificate17.pdf",
+      "title": "Introduction to Statistics in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2024-11-08",
+      "duration": "4 hours",
+      "certificate_id": "36931740",
+      "pdf": "introduction-to-statistics-in-python.pdf",
+      "preview": "previews/introduction-to-statistics-in-python.webp"
+    },
+    {
+      "source_file": "certificate16.pdf",
+      "title": "Exploratory Data Analysis in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2025-01-21",
+      "duration": "4 hours",
+      "certificate_id": "35580577",
+      "pdf": "exploratory-data-analysis-in-python.pdf",
+      "preview": "previews/exploratory-data-analysis-in-python.webp"
+    },
+    {
+      "source_file": "certificate19.pdf",
+      "title": "Hypothesis Testing in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2025-05-04",
+      "duration": "4 hours",
+      "certificate_id": "40544193",
+      "pdf": "hypothesis-testing-in-python.pdf",
+      "preview": "previews/hypothesis-testing-in-python.webp"
+    },
+    {
+      "source_file": "certificate18.pdf",
+      "title": "Sampling in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2025-05-04",
+      "duration": "4 hours",
+      "certificate_id": "40022882",
+      "pdf": "sampling-in-python.pdf",
+      "preview": "previews/sampling-in-python.webp"
+    },
+    {
+      "source_file": "certificate20.pdf",
+      "title": "Experimental Design in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2026-03-19",
+      "duration": "4 hours",
+      "certificate_id": "46849284",
+      "pdf": "experimental-design-in-python.pdf",
+      "preview": "previews/experimental-design-in-python.webp"
+    },
+    {
+      "source_file": "certificate34.pdf",
+      "title": "Introduction to Regression with statsmodels in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2026-04-10",
+      "duration": "4 hours",
+      "certificate_id": "47195718",
+      "pdf": "introduction-to-regression-with-statsmodels-in-python.pdf",
+      "preview": "previews/introduction-to-regression-with-statsmodels-in-python.webp"
+    },
+    {
+      "source_file": "certificate30.pdf",
+      "title": "Intermediate Regression with statsmodels in Python",
+      "category": "Statistics and experimentation",
+      "completed": "2026-04-16",
+      "duration": "4 hours",
+      "certificate_id": "47279186",
+      "pdf": "intermediate-regression-with-statsmodels-in-python.pdf",
+      "preview": "previews/intermediate-regression-with-statsmodels-in-python.webp"
+    },
+    {
+      "source_file": "certificate14.pdf",
+      "title": "Introduction to Data Visualization with Matplotlib",
+      "category": "Visualization and geospatial",
+      "completed": "2024-12-17",
+      "duration": "4 hours",
+      "certificate_id": "37783717",
+      "pdf": "introduction-to-data-visualization-with-matplotlib.pdf",
+      "preview": "previews/introduction-to-data-visualization-with-matplotlib.webp"
+    },
+    {
+      "source_file": "certificate15.pdf",
+      "title": "Introduction to Data Visualization with Seaborn",
+      "category": "Visualization and geospatial",
+      "completed": "2024-12-22",
+      "duration": "4 hours",
+      "certificate_id": "37886311",
+      "pdf": "introduction-to-data-visualization-with-seaborn.pdf",
+      "preview": "previews/introduction-to-data-visualization-with-seaborn.webp"
+    },
+    {
+      "source_file": "certificate35.pdf",
+      "title": "Data Communication Concepts",
+      "category": "Visualization and geospatial",
+      "completed": "2026-03-20",
+      "duration": "3 hours",
+      "certificate_id": "46847728",
+      "pdf": "data-communication-concepts.pdf",
+      "preview": "previews/data-communication-concepts.webp"
+    },
+    {
+      "source_file": "certificate29.pdf",
+      "title": "Improving Your Data Visualizations in Python",
+      "category": "Visualization and geospatial",
+      "completed": "2026-04-17",
+      "duration": "4 hours",
+      "certificate_id": "47307162",
+      "pdf": "improving-your-data-visualizations-in-python.pdf",
+      "preview": "previews/improving-your-data-visualizations-in-python.webp"
+    },
+    {
+      "source_file": "certificate28.pdf",
+      "title": "Visualizing Geospatial Data in Python",
+      "category": "Visualization and geospatial",
+      "completed": "2026-04-17",
+      "duration": "4 hours",
+      "certificate_id": "47314789",
+      "pdf": "visualizing-geospatial-data-in-python.pdf",
+      "preview": "previews/visualizing-geospatial-data-in-python.webp"
+    },
+    {
+      "source_file": "certificate33.pdf",
+      "title": "Supervised Learning with scikit-learn",
+      "category": "Machine learning",
+      "completed": "2026-04-11",
+      "duration": "4 hours",
+      "certificate_id": "45352363",
+      "pdf": "supervised-learning-with-scikit-learn.pdf",
+      "preview": "previews/supervised-learning-with-scikit-learn.webp"
+    },
+    {
+      "source_file": "certificate32.pdf",
+      "title": "Unsupervised Learning in Python",
+      "category": "Machine learning",
+      "completed": "2026-04-11",
+      "duration": "4 hours",
+      "certificate_id": "47209042",
+      "pdf": "unsupervised-learning-in-python.pdf",
+      "preview": "previews/unsupervised-learning-in-python.webp"
+    },
+    {
+      "source_file": "certificate31.pdf",
+      "title": "Machine Learning with Tree-Based Models in Python",
+      "category": "Machine learning",
+      "completed": "2026-04-12",
+      "duration": "5 hours",
+      "certificate_id": "47223142",
+      "pdf": "machine-learning-with-tree-based-models-in-python.pdf",
+      "preview": "previews/machine-learning-with-tree-based-models-in-python.webp"
+    },
+    {
+      "source_file": "certificate27.pdf",
+      "title": "Introduction to Deep Learning with PyTorch",
+      "category": "Machine learning",
+      "completed": "2026-04-22",
+      "duration": "4 hours",
+      "certificate_id": "47314744",
+      "pdf": "introduction-to-deep-learning-with-pytorch.pdf",
+      "preview": "previews/introduction-to-deep-learning-with-pytorch.webp"
+    },
+    {
+      "source_file": "certificate26.pdf",
+      "title": "Reinforcement Learning with Gymnasium in Python",
+      "category": "Machine learning",
+      "completed": "2026-04-22",
+      "duration": "4 hours",
+      "certificate_id": "47386506",
+      "pdf": "reinforcement-learning-with-gymnasium-in-python.pdf",
+      "preview": "previews/reinforcement-learning-with-gymnasium-in-python.webp"
+    },
+    {
+      "source_file": "certificate36.pdf",
+      "title": "Introduction to SQL",
+      "category": "SQL and databases",
+      "completed": "2025-01-31",
+      "duration": "2 hours",
+      "certificate_id": "38646532",
+      "pdf": "introduction-to-sql.pdf",
+      "preview": "previews/introduction-to-sql.webp"
+    },
+    {
+      "source_file": "certificate42.pdf",
+      "title": "Intermediate SQL",
+      "category": "SQL and databases",
+      "completed": "2025-02-09",
+      "duration": "4 hours",
+      "certificate_id": "38669777",
+      "pdf": "intermediate-sql.pdf",
+      "preview": "previews/intermediate-sql.webp"
+    },
+    {
+      "source_file": "certificate41.pdf",
+      "title": "Joining Data in SQL",
+      "category": "SQL and databases",
+      "completed": "2025-03-02",
+      "duration": "4 hours",
+      "certificate_id": "38878304",
+      "pdf": "joining-data-in-sql.pdf",
+      "preview": "previews/joining-data-in-sql.webp"
+    },
+    {
+      "source_file": "certificate40.pdf",
+      "title": "Data Manipulation in SQL",
+      "category": "SQL and databases",
+      "completed": "2025-03-24",
+      "duration": "4 hours",
+      "certificate_id": "39350329",
+      "pdf": "data-manipulation-in-sql.pdf",
+      "preview": "previews/data-manipulation-in-sql.webp"
+    },
+    {
+      "source_file": "certificate39.pdf",
+      "title": "PostgreSQL Summary Stats and Window Functions",
+      "category": "SQL and databases",
+      "completed": "2025-03-25",
+      "duration": "4 hours",
+      "certificate_id": "39794663",
+      "pdf": "postgresql-summary-stats-and-window-functions.pdf",
+      "preview": "previews/postgresql-summary-stats-and-window-functions.webp"
+    },
+    {
+      "source_file": "certificate38.pdf",
+      "title": "Functions for Manipulating Data in PostgreSQL",
+      "category": "SQL and databases",
+      "completed": "2025-04-01",
+      "duration": "4 hours",
+      "certificate_id": "39822141",
+      "pdf": "functions-for-manipulating-data-in-postgresql.pdf",
+      "preview": "previews/functions-for-manipulating-data-in-postgresql.webp"
+    },
+    {
+      "source_file": "certificate37.pdf",
+      "title": "Database Design",
+      "category": "SQL and databases",
+      "completed": "2025-04-04",
+      "duration": "4 hours",
+      "certificate_id": "39986101",
+      "pdf": "database-design.pdf",
+      "preview": "previews/database-design.webp"
+    },
+    {
+      "source_file": "certificate46.pdf",
+      "title": "Introduction to Excel",
+      "category": "Excel",
+      "completed": "2025-01-14",
+      "duration": "4 hours",
+      "certificate_id": "38078152",
+      "pdf": "introduction-to-excel.pdf",
+      "preview": "previews/introduction-to-excel.webp"
+    },
+    {
+      "source_file": "certificate45.pdf",
+      "title": "Data Preparation in Excel",
+      "category": "Excel",
+      "completed": "2025-01-22",
+      "duration": "3 hours",
+      "certificate_id": "38307718",
+      "pdf": "data-preparation-in-excel.pdf",
+      "preview": "previews/data-preparation-in-excel.webp"
+    },
+    {
+      "source_file": "certificate44.pdf",
+      "title": "Data Visualization in Excel",
+      "category": "Excel",
+      "completed": "2025-01-24",
+      "duration": "3 hours",
+      "certificate_id": "38472657",
+      "pdf": "data-visualization-in-excel.pdf",
+      "preview": "previews/data-visualization-in-excel.webp"
+    },
+    {
+      "source_file": "certificate43.pdf",
+      "title": "Data Analysis in Excel",
+      "category": "Excel",
+      "completed": "2025-01-28",
+      "duration": "3 hours",
+      "certificate_id": "38513745",
+      "pdf": "data-analysis-in-excel.pdf",
+      "preview": "previews/data-analysis-in-excel.webp"
+    }
+  ]
+}

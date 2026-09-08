@@ -117,6 +117,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260908-certificates/);
-  assert.match(html, /script\.js\?v=20260908-certificates/);
+  assert.match(html, /styles\.css\?v=20260908-intro-cleanup/);
+  assert.match(html, /script\.js\?v=20260908-intro-cleanup/);
 });

@@ -47,7 +47,9 @@ test("surfaces the five current flagship projects and their direct routes", () =
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#finland-rail-monitoring-system"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor"));
   assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md"));
-  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/model-card.md"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/inference-operations.md"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/tender-ai-operations.md"));
+  assert.ok(valuesFor("href").includes("https://github.com/Sintagmatarches/applied-ai-lab/blob/main/docs/olist-serving-contract.md"));
   assert.match(html, /15 recorded real TED notices and 30 curated retrieval scenarios/);
   assert.match(html, /source-derived portfolio evidence—not general AI accuracy/);
   assert.match(html, /mIoU<\/dt><dd>0\.6652/);
@@ -117,6 +119,6 @@ test("preserves basic static accessibility and security invariants", () => {
 });
 
 test("cache-busts tracked static assets with the current release token", () => {
-  assert.match(html, /styles\.css\?v=20260908-intro-cleanup/);
-  assert.match(html, /script\.js\?v=20260908-intro-cleanup/);
+  assert.match(html, /styles\.css\?v=20260921-engineering-audit/);
+  assert.match(html, /script\.js\?v=20260921-engineering-audit/);
 });

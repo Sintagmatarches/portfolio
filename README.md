@@ -2,6 +2,8 @@
 
 Static portfolio for evidence-backed data, BI, machine-learning and applied-AI work.
 
+Target roles: **Junior Data Engineer · Junior ML Engineer · Junior AI Engineer · Analytics Engineer · Applied AI Engineer**.
+
 [Open the live portfolio](https://sintagmatarches.github.io/portfolio/)
 
 ## Flagship projects
@@ -13,6 +15,8 @@ Static portfolio for evidence-backed data, BI, machine-learning and applied-AI w
 | [Olist Delivery Delay Predictor](https://github.com/Sintagmatarches/applied-ai-lab#olist-delivery-delay-predictor) | Leakage-safe chronological ML evaluation and server inference with Python/TypeScript parity | [Live predictor](https://applied-ai-lab.smjlw.chatgpt.site/olist-delivery-delay-predictor) |
 | [Finland Geospatial AI](https://github.com/Sintagmatarches/finland-geospatial-ai) | PyTorch segmentation of official NLS 0.5 m orthophotos with Topographic Database labels, spatial leakage controls, MLflow and GeoTIFF inference | [NLS v2 experiment report](https://github.com/Sintagmatarches/finland-geospatial-ai/blob/main/reports/v2/generated/experiment-report.md) |
 | [Helsinki Water — Forecasting + Optimization](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization) | Real Helsinki water-meter data, expanding backtests, conformal uncertainty, residual anomaly triage, CP-SAT inspection planning and a peer-reviewed method reproduction | [Scientific report](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/blob/main/reports/scientific-report.md) |
+
+[Technical portfolio audit](docs/technical-audit-2026-09-11.md) · [Final engineering report](docs/portfolio-engineering-report-2026-09-21.md) · [Interview engineering defence](PORTFOLIO_ENGINEERING_DEFENSE.md) · [Open-source contribution shortlist](docs/open-source-contributions.md)
 
 The deployed Olist baseline is documented against the 14,471-order final benchmark: **6.32% PR-AUC**, **63.44% ROC-AUC**, and **107 of 620** late orders found in the highest-risk 10%. The modest result is presented as relative ranking evidence rather than a calibrated probability claim.
 

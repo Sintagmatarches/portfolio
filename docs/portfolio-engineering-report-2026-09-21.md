@@ -35,6 +35,7 @@ The portfolio is sufficient to support applications for junior Data Engineer, An
 - Added preflight all-NoData and decoded-size validation, sanitized API errors, serialized model loading, non-blocking overload rejection, and upload/pixel limits.
 - Added checkpoint-integrity verification before model construction and an exact, tested Transformers v5 state-key migration with unchanged tensors.
 - Updated the runtime, removed known dependency advisories in a clean environment, added `pip check`, `pip-audit`, SBOM generation, a non-root container, and `/live` health checks.
+- Fixed a real Linux container failure: `safetensors` created the synthetic bind-mounted checkpoint as `0600`, so UID 10001 could not read it. The generator now publishes these public fixtures as `0644`, and CI loads the model as the runtime user before starting the API.
 
 ### `helsinki-water-forecasting-optimization`
 
@@ -55,6 +56,13 @@ The portfolio is sufficient to support applications for junior Data Engineer, An
 - Water: `pytest` — **35 passed**; `ruff check .` and strict `mypy` — passed; full experiment and report CLIs completed without changing tracked scientific artifacts; `pip-audit` — **0 known vulnerabilities**.
 - Portfolio: `npm test` — **8 passed**.
 - Geospatial and Tender OCI images built successfully. The geospatial container returned 200 from `/live`, reported the synthetic smoke model ready, and produced a ZIP containing `prediction.tif`, `confidence.tif`, and `summary.json`. Hosted smoke checks and GitHub Actions results are recorded in the deployment history for the associated commits.
+
+## Deployment evidence
+
+- Applied AI Lab commit [`067a57a`](https://github.com/Sintagmatarches/applied-ai-lab/commit/067a57a39fbaa40cc434e19a1cb57fa127e2e2eb): [CI](https://github.com/Sintagmatarches/applied-ai-lab/actions/runs/35601737772), [live-site smoke](https://github.com/Sintagmatarches/applied-ai-lab/actions/runs/35601809356), and [governed Rail publication](https://github.com/Sintagmatarches/applied-ai-lab/actions/runs/35709515627) succeeded. The matching source was deployed as public Sites version 45 at [Applied AI Lab](https://applied-ai-lab.smjlw.chatgpt.site).
+- Geospatial AI commit [`814e694`](https://github.com/Sintagmatarches/finland-geospatial-ai/commit/814e6947d10f368ea8adde09d368a0c7ce37864c): [CI](https://github.com/Sintagmatarches/finland-geospatial-ai/actions/runs/35713031887) covers pinned current Actions, dependency audit/SBOM, lint, typing, coverage, image build, non-root artifact load, readiness, and multipart inference.
+- Water commit [`ba5f17c`](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/commit/ba5f17c540a8584073bfdcbba670cd90bddd05c1): [CI](https://github.com/Sintagmatarches/helsinki-water-forecasting-optimization/actions/runs/35601736520) succeeded.
+- Portfolio commit [`e1a31c5`](https://github.com/Sintagmatarches/portfolio/commit/e1a31c548f8fc553bdf9cb4a70ae2555a7b272f3): [validation](https://github.com/Sintagmatarches/portfolio/actions/runs/35601736812) and [GitHub Pages deployment](https://github.com/Sintagmatarches/portfolio/actions/runs/35601735805) succeeded; the public page exposes the reviewed cache version.
 
 ## New project decision
 
